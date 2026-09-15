@@ -11,7 +11,10 @@ config_version=5
 [application]
 
 config/name="Apocalypse-Monkey"
+<<<<<<< HEAD
 run/main_scene="uid://cyegivlh4wwfs"
+=======
+>>>>>>> 0b722c5 (inital commit)
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
