@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cyegivlh4wwfs"]
+
+[ext_resource type="Texture2D" uid="uid://cqdv6pe5rihpb" path="res://Planning/UI/1.png" id="1_sjmnu"]
+[ext_resource type="Script" uid="uid://cpgb8r048nlok" path="res://Scenes/new_game_button.gd" id="2_cgmvo"]
+
+[sub_resource type="ImageTexture" id="ImageTexture_fu252"]
+
+[node name="Control" type="Control" unique_id=1701517478]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=794985635]
+visible = false
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 644.0
+texture = SubResource("ImageTexture_fu252")
+
+[node name="1" type="Sprite2D" parent="." unique_id=518210946]
+position = Vector2(578, 321.5)
+scale = Vector2(0.5989583, 0.6009259)
+texture = ExtResource("1_sjmnu")
+
+[node name="Continuebutton" type="TextureButton" parent="." unique_id=134236951]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 554.0
+offset_right = 313.0
+offset_bottom = 594.0
+
+[node name="New Game Button" type="TextureButton" parent="." unique_id=605152392]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 557.0
+offset_right = 685.0
+offset_bottom = 597.0
+script = ExtResource("2_cgmvo")
+
+[node name="Options button" type="TextureButton" parent="." unique_id=934569327]
+layout_mode = 0
+offset_left = 822.0
+offset_top = 553.0
+offset_right = 1051.0
+offset_bottom = 593.0
+
+[connection signal="pressed" from="New Game Button" to="New Game Button" method="_on_pressed"]
