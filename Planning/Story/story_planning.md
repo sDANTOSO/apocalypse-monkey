@@ -15,7 +15,7 @@ The monkey is infiltrating the meetup, because his target is on the meetup.
 
 ## Characters
 * Sato: Main character is a dripped out assassin monkey (Japanese Macaque). He is very stubborn and only follows his way on the highway. He is a brutal, but sneaky assassin, and will take any job if you pay him a nice sum. He doesn't like to work in a team- and if he has to work in a team, he will. He is a Japanese Macaque having brown-grey fur. He spends most of his time chilling in the hot springs.
-* Ren:
+* Ren: 
 * Minato:
 Members of the secret organsition
 * Kim Jon Un - super evil dictator leading the secret organisation.
@@ -24,14 +24,18 @@ Members of the secret organsition
 * Opposition group - Aligning goals to monkey assassin - Goblin guild
 They want to save the world so they help the protagonist, serve as comedic relief because they are so incompetent
 
+## How It Started
+It started because the big companies started to abuse the enviroment a bit to much, pushing industry onto the world. This caused a mass glacial period, turning the world to snow and ice. Japan has become an empty wasteland, since everybody moved out, making japans poplulation to move away or die. Now all that roam the streets are bad/dangerous people, crime and junkies. There are no laws here. 
+
 ## Ideas
 The stand off between assasin and cowboy monkey
 The Secret Organisation: The secret organisation meet often, and consists of all of the worlds big leaders who profit of of the struggle and pain that war and and apocolyptic dystopia causes. They have the answer to solving all of the worlds problems, and the means to do it, but they are just to greedy and have a need for power. 
 
 # Roadmap of Plot
 I don't know how this will go, so I am just going to make up some stuff please help me.
-First what happens is like the evil socciety is meeting up. It cosists of Kim Jong Un and all the rich people of the world and all the evil people, for example palantir ect (idk what). They are meeting to discuss that another group, the green people who are starting to find out about this socciety. They don't know who theese people but they hired a private detective to find out. The last thing they sent is "watch your back"
+First what happens is like the evil socciety is meeting up. It cosists of Kim Jong Un and all the rich people of the world and all the evil people, for example palantir ect (idk what). They are meeting to discuss that another group, the green people who are starting to find out about this socciety. They don't know who theese people but they hired a private detective to find out. The last thing they sent is "watch your back". All the leaders are not to stressed out.
 
+Then it goes to sato, the japaneese monkey sitting
 
 
 # Scenes
