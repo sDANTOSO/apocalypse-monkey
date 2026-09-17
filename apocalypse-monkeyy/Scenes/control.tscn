@@ -15,8 +15,10 @@ grow_vertical = 2
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=794985635]
 layout_mode = 0
-offset_right = 1151.0
-offset_bottom = 644.0
+offset_left = 253.0
+offset_top = 177.0
+offset_right = 1404.0
+offset_bottom = 821.0
 texture = SubResource("ImageTexture_fu252")
 
 [node name="1" type="Sprite2D" parent="." unique_id=518210946]

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://1wxs1k0vt6aq"]
+
+[ext_resource type="Texture2D" uid="uid://dtsaevs1bb5as" path="res://Assets-misc/hitmonkeyv2.png" id="1_bnps5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_usdog"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_bnps5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_bnps5")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Character_Test" type="Node2D" unique_id=1008656143]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1056987881]
+position = Vector2(282, 667)
+scale = Vector2(3.3819444, 3.3819444)
+sprite_frames = SubResource("SpriteFrames_usdog")

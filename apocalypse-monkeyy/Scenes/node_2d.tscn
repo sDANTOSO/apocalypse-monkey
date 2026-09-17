@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://cq7yvpbe7tkha"]
+
+[ext_resource type="Texture2D" uid="uid://3ifvgqs8s1bg" path="res://Assets-misc/image (8).png" id="1_j2wod"]
+[ext_resource type="PackedScene" uid="uid://1wxs1k0vt6aq" path="res://Scenes/character_test.tscn" id="2_v1qfn"]
+
+[node name="Scene_Test" type="Node2D" unique_id=1769345082]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=623300826]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=541014698]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -11.0
+offset_right = 237.0
+offset_bottom = 197.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_j2wod")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1926739851]
+
+[node name="Control" type="Control" parent="CanvasLayer2" unique_id=198418918]
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Character_Test" parent="CanvasLayer2/Control" unique_id=1008656143 instance=ExtResource("2_v1qfn")]
+position = Vector2(-430, -1098)
+scale = Vector2(2, 2)
