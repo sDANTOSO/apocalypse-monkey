@@ -1,10 +1,21 @@
 [gd_scene format=3 uid="uid://cwk7oilh5100h"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_usdog"]
+line_spacing = 7.0
+font_size = 35
+font_color = Color(0.92156863, 0, 0.7176471, 1)
+outline_size = 1
+outline_color = Color(0.54080325, 1, 0.5730765, 1)
+
 [node name="Dialoge UI" type="Control" unique_id=231000439]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -38.0
+offset_top = 2.0
+offset_right = -38.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -14,21 +25,43 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 39.000004
 offset_top = -134.0
-offset_right = -477.29694
+offset_right = -461.0791
 offset_bottom = -55.72278
 grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(1.7118644, 1.7118644)
 
-[node name="PanelContainer" type="PanelContainer" parent="." unique_id=722772308]
+[node name="PanelContainer" type="Control" parent="." unique_id=1053344901]
 layout_mode = 1
+anchors_preset = 0
 offset_left = -0.81
-offset_top = 426.34
+offset_top = 454.0
 offset_right = 248.06
-offset_bottom = 519.33984
+offset_bottom = 514.33984
 
-[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1623666245]
-position = Vector2(1036.1002, 586.2882)
-scale = Vector2(0.8481811, 0.2551982)
-polygon = PackedVector2Array(33.002808, 18.463257, 103.11267, 110.51636, 30.53572, 179.80489)
+[node name="Polygon2D" type="Polygon2D" parent="PanelContainer" unique_id=1623666245]
+position = Vector2(86.16717, 53.21875)
+scale = Vector2(1.0299339, 0.11214764)
+polygon = PackedVector2Array(134.61331, -456.70825, 79.308685, -438.87463, 12.968933, -438.87463, -45.980774, -438.87463, -45.98078, -162.45313, -45.980774, 58.777832, 201.60791, 62.69629)
+uv = PackedVector2Array(26.5, 9.5, -40, -10.5, -40.5, 52, 61.5, 53)
+
+[node name="Label" type="Label" parent="PanelContainer" unique_id=1103941197]
+layout_mode = 0
+offset_left = 45.81
+offset_top = 7.0
+offset_right = 222.81
+offset_bottom = 54.0
+rotation = -0.008240829
+theme_override_font_sizes/font_size = 28
+text = "Name
+"
+label_settings = SubResource("LabelSettings_usdog")
+
+[node name="Control" type="Control" parent="." unique_id=2142765226]
+anchors_preset = 0
+offset_left = 4.0
+offset_top = -1.0
+offset_right = 44.0
+offset_bottom = 39.0
