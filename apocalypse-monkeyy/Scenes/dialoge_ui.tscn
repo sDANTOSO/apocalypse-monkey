@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cwk7oilh5100h"]
 
+[sub_resource type="Theme" id="Theme_mqg1c"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_usdog"]
 line_spacing = 7.0
 font_size = 35
@@ -18,6 +20,7 @@ offset_right = -38.0
 offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = SubResource("Theme_mqg1c")
 
 [node name="UiTextbox1" type="PanelContainer" parent="." unique_id=1703837797]
 layout_mode = 1

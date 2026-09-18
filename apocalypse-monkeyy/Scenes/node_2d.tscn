@@ -38,6 +38,7 @@ offset_top = -40.0
 offset_right = 20.0
 grow_horizontal = 2
 grow_vertical = 0
+metadata/_edit_use_anchors_ = true
 
 [node name="Character_Test" parent="CanvasLayer2/Control" unique_id=1008656143 instance=ExtResource("2_v1qfn")]
 unique_name_in_owner = true
@@ -49,3 +50,4 @@ unique_name_in_owner = true
 offset_top = 11.0
 offset_bottom = 11.0
 rotation = -0.0012976257
+metadata/_edit_use_anchors_ = true
