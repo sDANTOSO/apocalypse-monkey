@@ -33,6 +33,11 @@ grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(1.7118644, 1.7118644)
 
+[node name="RichTextLabel" type="RichTextLabel" parent="UiTextbox1" unique_id=1991137995]
+layout_mode = 2
+bbcode_enabled = true
+text = "Hello, This Is Some [shake]Dialoge[/shake] Hehe"
+
 [node name="PanelContainer" type="Control" parent="." unique_id=1053344901]
 layout_mode = 1
 anchors_preset = 0
