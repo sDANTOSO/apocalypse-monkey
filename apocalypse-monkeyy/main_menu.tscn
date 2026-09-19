@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://dwtev45ummi2u"]
+
+[ext_resource type="Script" uid="uid://dqook3dvetkd0" path="res://main_menu.gd" id="1_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://craii3mu5ncif" path="res://Assets-misc/UI/UI Textbox 1.png" id="2_jix8l"]
+[ext_resource type="FontFile" uid="uid://dxgob514unqbt" path="res://Assets-misc/Japan wave.ttf" id="3_glbon"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n2kj2"]
+bg_color = Color(0.4745098, 0.6509804, 0.49803922, 0)
+
+[node name="Main Menu" type="Node2D" unique_id=51321977]
+script = ExtResource("1_fu7sn")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=752346714]
+offset_left = -12.0
+offset_top = -23.0
+offset_right = 1163.0
+offset_bottom = 647.0
+
+[node name="Button" type="Button" parent="." unique_id=27775815]
+offset_left = 31.0
+offset_top = 450.0
+offset_right = 639.0
+offset_bottom = 615.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_n2kj2")
+icon = ExtResource("2_jix8l")
+flat = true
+
+[node name="Label" type="Label" parent="." unique_id=1240712612]
+offset_left = 21.0
+offset_top = 15.0
+offset_right = 1137.0
+offset_bottom = 193.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_glbon")
+theme_override_font_sizes/font_size = 150
+text = "Apocolypse Monkey"
+
+[node name="Label" type="Label" parent="Label" unique_id=407153214]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 150.0
+offset_right = 111.0
+offset_bottom = 211.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_glbon")
+theme_override_font_sizes/font_size = 50
+text = "v.1.0"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
