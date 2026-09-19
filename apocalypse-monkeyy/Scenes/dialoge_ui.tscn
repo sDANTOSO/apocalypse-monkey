@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://cwk7oilh5100h"]
 
+[ext_resource type="Script" uid="uid://4l7a8ktb7ftm" path="res://Scenes/dialoge_ui.gd" id="1_yrr88"]
+
 [sub_resource type="Theme" id="Theme_mqg1c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_usdog"]
@@ -21,6 +23,7 @@ offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_mqg1c")
+script = ExtResource("1_yrr88")
 
 [node name="UiTextbox1" type="PanelContainer" parent="." unique_id=1703837797]
 layout_mode = 1
@@ -36,7 +39,7 @@ grow_horizontal = 2
 grow_vertical = 0
 scale = Vector2(1.7118644, 1.7118644)
 
-[node name="RichTextLabel" type="RichTextLabel" parent="UiTextbox1" unique_id=1991137995]
+[node name="Dialog_Line" type="RichTextLabel" parent="UiTextbox1" unique_id=1991137995]
 layout_mode = 2
 bbcode_enabled = true
 text = "Hello, This Is Some [shake]Dialoge[/shake] Hehe"
@@ -55,7 +58,7 @@ scale = Vector2(1.0299339, 0.11214764)
 polygon = PackedVector2Array(134.61331, -456.70825, 79.308685, -438.87463, 12.968933, -438.87463, -45.980774, -438.87463, -45.98078, -162.45313, -45.980774, 58.777832, 201.60791, 62.69629)
 uv = PackedVector2Array(26.5, 9.5, -40, -10.5, -40.5, 52, 61.5, 53)
 
-[node name="Label" type="Label" parent="PanelContainer" unique_id=1103941197]
+[node name="SpeakerName" type="Label" parent="PanelContainer" unique_id=1103941197]
 layout_mode = 0
 offset_left = 45.81
 offset_top = 7.0

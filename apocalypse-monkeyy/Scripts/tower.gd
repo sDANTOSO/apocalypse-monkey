@@ -78,3 +78,4 @@ extends Node2D
 ##imperial village(secrets)
 ##rich people houses(protected)
 ## his village
+## the garden

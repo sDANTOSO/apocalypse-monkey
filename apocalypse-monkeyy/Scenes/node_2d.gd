@@ -1,19 +1,26 @@
 extends Node2D
 
-@onready var Character_Test = %Character_Test
-@onready var Dialouge_UI = %Dialouge_UI
+@onready var character_Test = %Character_Test
+@onready var dialog_ui = $"."
 
 const dialog_lines : Array[String] = [
 	"Assassin Monkey: I am an assasin, not a entertainer",
 	"Cowboy Monkey: That's not what I asked"
 ]
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	process_line(parse_line(dialog_lines[0]))
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func parse_line(line: String) -> Dictionary:
+	var line_info = line.split(":")
+	assert(len(line_info) >= 2)
+	return {
+		"speaker_name": line_info[0],
+		"dialog_line": line_info[1]
+	}
+
+func process_line(line_info: Dictionary) -> void:
+	dialog_ui.speaker_name = line_info["speaker_name"]
+	dialog_ui.dialog_line = line_info["dialog_line"]
