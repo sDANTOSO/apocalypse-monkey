@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://cwk7oilh5100h"]
 
 [ext_resource type="Script" uid="uid://4l7a8ktb7ftm" path="res://Scenes/dialoge_ui.gd" id="1_yrr88"]
+[ext_resource type="FontFile" uid="uid://b68o0l0yujctr" path="res://Assets-misc/Japanese Ramen.ttf" id="2_r75eh"]
+[ext_resource type="FontFile" uid="uid://dxgob514unqbt" path="res://Assets-misc/Japan wave.ttf" id="3_thhau"]
 
 [sub_resource type="Theme" id="Theme_mqg1c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_usdog"]
 line_spacing = 7.0
-font_size = 35
-font_color = Color(0.92156863, 0, 0.7176471, 1)
-outline_size = 1
+font = ExtResource("3_thhau")
+font_size = 46
+font_color = Color(0, 0, 0, 1)
 outline_color = Color(0.54080325, 1, 0.5730765, 1)
 
 [node name="Dialoge UI" type="Control" unique_id=231000439]
@@ -42,8 +44,12 @@ scale = Vector2(1.7118644, 1.7118644)
 [node name="Dialog_Line" type="RichTextLabel" parent="UiTextbox1" unique_id=1991137995]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_constants/line_separation = -1
+theme_override_fonts/normal_font = ExtResource("2_r75eh")
+theme_override_font_sizes/normal_font_size = 22
 bbcode_enabled = true
 text = "Hello, This Is Some [shake]Dialoge[/shake] Hehe"
+tab_size = 5
 
 [node name="PanelContainer" type="Control" parent="." unique_id=1053344901]
 layout_mode = 1

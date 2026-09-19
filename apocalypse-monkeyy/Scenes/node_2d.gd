@@ -5,8 +5,11 @@ extends Node2D
 var dialog_index : int = 0
 
 const dialog_lines : Array[String] = [
-	"Assassin Monkey: I am an assasin, not a entertainer",
-	"Cowboy Monkey: That's not what I asked"
+	"Sato: It's been 6 months since the start",
+	"Sato: My garden. It hasn't even grown",
+	"Sato: There has been no fruit. No vegetables. No Income",
+	"Sato: ",
+
 ]
 
 # Called when the node enters the scene tree for the first time.
