@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var character_Test = %Character_Test
+@onready var character_Test = %Character
 @onready var dialog_ui = %"Dialoge UI"
 var dialog_index : int = 0
 
@@ -10,7 +10,8 @@ const dialog_lines : Array[String] = [
 	"Sato: There has been no fruit. No vegetables. No Income",
 	"Sato: No Harvest.",
 	"Sato: My tribe has started to starve",
-	"Sato: I must do something!"
+	"Sato: I must do something!",
+	"Minato: Yo"
 ]
 
 # Called when the node enters the scene tree for the first time.
@@ -36,4 +37,4 @@ func process_current_line():
 	var line_info = parse_line(dialog_lines[dialog_index])
 	dialog_ui.speaker_name.text = line_info["speaker_name"]
 	dialog_ui.dialog_line.text = line_info["dialog_line"]
-	
+	character_Test.change_character(line_info["speaker_name"])

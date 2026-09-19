@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dnf022gp8hbeg"]
+
+[ext_resource type="Texture2D" uid="uid://dtsaevs1bb5as" path="res://Assets-misc/hitmonkeyv2.png" id="1_xgrr8"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_xgrr8")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bu6bsjsc50w4d"]
+
+[ext_resource type="Script" uid="uid://lxb3ciw7gsjb" path="res://Scripts/character.gd" id="1_ushfy"]
+[ext_resource type="SpriteFrames" uid="uid://dmkido154oya7" path="res://Sprite Frames/cowboy_moneky_frames.tres" id="2_ushfy"]
+
+[node name="Character" type="Node2D" unique_id=796381982]
+script = ExtResource("1_ushfy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1703588158]
+position = Vector2(593, 435.99997)
+scale = Vector2(5.4967103, 5.4967103)
+sprite_frames = ExtResource("2_ushfy")
+animation = &"idle"

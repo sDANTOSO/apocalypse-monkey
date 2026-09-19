@@ -1,0 +1,17 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://dmkido154oya7"]
+
+[ext_resource type="Texture2D" uid="uid://ctmhc1lbig2du" path="res://Assets-misc/cowboy-monke.png" id="1_grhdj"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_grhdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_grhdj")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 5.0
+}]
