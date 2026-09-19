@@ -8,8 +8,9 @@ const dialog_lines : Array[String] = [
 	"Sato: It's been 6 months since the start",
 	"Sato: My garden. It hasn't even grown",
 	"Sato: There has been no fruit. No vegetables. No Income",
-	"Sato: ",
-
+	"Sato: No Harvest.",
+	"Sato: My whole family have been farmers.",
+	"Sato: But now I don't think I can continue."
 ]
 
 # Called when the node enters the scene tree for the first time.

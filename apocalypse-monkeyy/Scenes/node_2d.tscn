@@ -16,10 +16,10 @@ layer = -1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -44.0
-offset_top = -148.0
-offset_right = 252.0
-offset_bottom = 290.0
+offset_left = -78.0
+offset_top = -203.0
+offset_right = 218.0
+offset_bottom = 235.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_j2wod")
@@ -42,12 +42,14 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Character_Test" parent="CanvasLayer2/Control" unique_id=1008656143 instance=ExtResource("2_v1qfn")]
 unique_name_in_owner = true
-position = Vector2(-430, -1098)
+position = Vector2(-497, -1100)
 scale = Vector2(2, 2)
 
 [node name="Dialoge UI" parent="CanvasLayer2" unique_id=231000439 instance=ExtResource("3_hh5uf")]
 unique_name_in_owner = true
-offset_top = 11.0
+offset_left = -40.000004
+offset_top = 10.999999
+offset_right = -40.0
 offset_bottom = 11.0
 rotation = -0.0012976257
 metadata/_edit_use_anchors_ = true
