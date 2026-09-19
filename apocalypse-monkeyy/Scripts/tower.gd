@@ -79,3 +79,6 @@ extends Node2D
 ##rich people houses(protected)
 ## his village
 ## the garden
+##cowboy base
+##powerstation
+#ruined city
