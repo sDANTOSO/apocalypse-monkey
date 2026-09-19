@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://t7250daxi28x"]
+
+[ext_resource type="Script" uid="uid://dr8jhcykdclr2" path="res://Scripts/text_giver.gd" id="1_mrh86"]
+
+[node name="TextGiver" type="Control" unique_id=1433328169]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mrh86")
+
+[node name="Label" type="RichTextLabel" parent="." unique_id=4583261]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "asbasdasd[shake]asdasd"
+horizontal_alignment = 1
+vertical_alignment = 1
