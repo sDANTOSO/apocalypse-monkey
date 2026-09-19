@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://dwtev45ummi2u"]
 
-[ext_resource type="Script" uid="uid://dqook3dvetkd0" path="res://Scripts/main_menu.gd" id="1_1ehe0"]
-[ext_resource type="Texture2D" uid="uid://craii3mu5ncif" path="res://Assets-misc/UI/UI Textbox 1.png" id="2_ce3w2"]
-[ext_resource type="FontFile" uid="uid://dxgob514unqbt" path="res://Assets-misc/Japan wave.ttf" id="3_n45e2"]
+[ext_resource type="Script" uid="uid://dqook3dvetkd0" path="res://main_menu.gd" id="1_fu7sn"]
+[ext_resource type="Texture2D" uid="uid://craii3mu5ncif" path="res://Assets-misc/UI/UI Textbox 1.png" id="2_jix8l"]
+[ext_resource type="FontFile" uid="uid://dxgob514unqbt" path="res://Assets-misc/Japan wave.ttf" id="3_glbon"]
+[ext_resource type="FontFile" uid="uid://b68o0l0yujctr" path="res://Assets-misc/Japanese Ramen.ttf" id="4_jix8l"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n2kj2"]
 bg_color = Color(0.4745098, 0.6509804, 0.49803922, 0)
@@ -17,13 +18,14 @@ offset_right = 1163.0
 offset_bottom = 647.0
 
 [node name="Button" type="Button" parent="." unique_id=27775815]
-offset_left = 31.0
-offset_top = 450.0
-offset_right = 639.0
-offset_bottom = 615.0
+offset_left = 32.0
+offset_top = 327.0
+offset_right = 1108.0
+offset_bottom = 624.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_n2kj2")
 icon = ExtResource("2_ce3w2")
 flat = true
+expand_icon = true
 
 [node name="Label" type="Label" parent="." unique_id=1240712612]
 offset_left = 21.0
@@ -45,5 +47,24 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_n45e2")
 theme_override_font_sizes/font_size = 50
 text = "v.1.0"
+
+[node name="Label2" type="Label" parent="." unique_id=1089560994]
+offset_left = 360.0
+offset_top = 437.0
+offset_right = 965.0
+offset_bottom = 566.0
+theme_override_fonts/font = ExtResource("4_jix8l")
+theme_override_font_sizes/font_size = 75
+text = "Start Game"
+
+[node name="Label2" type="Label" parent="Label2" unique_id=729102345]
+layout_mode = 0
+offset_left = -220.0
+offset_top = -64.0
+offset_right = -71.0
+offset_bottom = -11.0
+theme_override_fonts/font = ExtResource("4_jix8l")
+theme_override_font_sizes/font_size = 30
+text = "New Save"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
