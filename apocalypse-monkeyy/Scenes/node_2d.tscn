@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://3ifvgqs8s1bg" path="res://Assets-misc/image (8).png" id="1_j2wod"]
 [ext_resource type="PackedScene" uid="uid://1wxs1k0vt6aq" path="res://Scenes/character_test.tscn" id="2_v1qfn"]
 [ext_resource type="PackedScene" uid="uid://cwk7oilh5100h" path="res://Scenes/dialoge_ui.tscn" id="3_hh5uf"]
+[ext_resource type="PackedScene" uid="uid://dpbp0qgnahlpt" path="res://Scenes/audio_stream_player.tscn" id="5_u7krg"]
 
 [node name="Scene_Test" type="Node2D" unique_id=1769345082]
 rotation = 0.012734087
@@ -53,3 +54,5 @@ offset_right = -40.0
 offset_bottom = 11.0
 rotation = -0.0012976257
 metadata/_edit_use_anchors_ = true
+
+[node name="BG Music" parent="." unique_id=1125075624 instance=ExtResource("5_u7krg")]

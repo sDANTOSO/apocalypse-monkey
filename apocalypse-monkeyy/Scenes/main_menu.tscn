@@ -1,15 +1,17 @@
 [gd_scene format=3 uid="uid://dwtev45ummi2u"]
 
-[ext_resource type="Script" uid="uid://dqook3dvetkd0" path="res://main_menu.gd" id="1_fu7sn"]
+[ext_resource type="Script" uid="uid://dqook3dvetkd0" path="res://Scripts/main_menu.gd" id="1_fu7sn"]
 [ext_resource type="Texture2D" uid="uid://craii3mu5ncif" path="res://Assets-misc/UI/UI Textbox 1.png" id="2_jix8l"]
 [ext_resource type="FontFile" uid="uid://dxgob514unqbt" path="res://Assets-misc/Japan wave.ttf" id="3_glbon"]
+[ext_resource type="Texture2D" uid="uid://c0ccvjqqpb6hx" path="res://Assets-misc/Apocalypse monkey head.png" id="3_opfnp"]
 [ext_resource type="FontFile" uid="uid://b68o0l0yujctr" path="res://Assets-misc/Japanese Ramen.ttf" id="4_jix8l"]
+[ext_resource type="PackedScene" uid="uid://dpbp0qgnahlpt" path="res://Scenes/audio_stream_player.tscn" id="5_n45e2"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n2kj2"]
 bg_color = Color(0.4745098, 0.6509804, 0.49803922, 0)
 
 [node name="Main Menu" type="Node2D" unique_id=51321977]
-script = ExtResource("1_1ehe0")
+script = ExtResource("1_fu7sn")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=752346714]
 offset_left = -12.0
@@ -23,9 +25,14 @@ offset_top = 327.0
 offset_right = 1108.0
 offset_bottom = 624.0
 theme_override_styles/normal = SubResource("StyleBoxFlat_n2kj2")
-icon = ExtResource("2_ce3w2")
+icon = ExtResource("2_jix8l")
 flat = true
 expand_icon = true
+
+[node name="ApocalypseMonkeyHead" type="Sprite2D" parent="." unique_id=1603355846]
+position = Vector2(537, 277)
+scale = Vector2(3.3552635, 3.3552632)
+texture = ExtResource("3_opfnp")
 
 [node name="Label" type="Label" parent="." unique_id=1240712612]
 offset_left = 21.0
@@ -33,7 +40,7 @@ offset_top = 15.0
 offset_right = 1137.0
 offset_bottom = 193.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_n45e2")
+theme_override_fonts/font = ExtResource("3_glbon")
 theme_override_font_sizes/font_size = 150
 text = "Apocalypse Monkey"
 
@@ -44,7 +51,7 @@ offset_top = 150.0
 offset_right = 111.0
 offset_bottom = 211.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("3_n45e2")
+theme_override_fonts/font = ExtResource("3_glbon")
 theme_override_font_sizes/font_size = 50
 text = "v.1.0"
 
@@ -66,5 +73,8 @@ offset_bottom = -11.0
 theme_override_fonts/font = ExtResource("4_jix8l")
 theme_override_font_sizes/font_size = 30
 text = "New Save"
+
+[node name="BG Music" parent="." unique_id=1125075624 instance=ExtResource("5_n45e2")]
+volume_db = 1.0
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
