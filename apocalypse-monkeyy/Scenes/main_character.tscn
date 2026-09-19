@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://btryiulrvkmra"]
+
+[ext_resource type="Texture2D" uid="uid://dtsaevs1bb5as" path="res://Assets-misc/hitmonkeyv2.png" id="1_0eyao"]
+[ext_resource type="Script" uid="uid://i3bydlyeos0j" path="res://Scripts/character_body_2d.gd" id="2_11o2n"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_auhcp"]
+radius = 38.0
+height = 142.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_11o2n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0eyao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_0eyao")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="MainCharacter" type="CharacterBody2D" unique_id=1952505412]
+script = ExtResource("2_11o2n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=677224117]
+position = Vector2(262, 545)
+shape = SubResource("CapsuleShape2D_auhcp")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D" unique_id=307492068]
+position = Vector2(-0.625, 79.72223)
+scale = Vector2(1.7170138, 1.5056423)
+sprite_frames = SubResource("SpriteFrames_11o2n")

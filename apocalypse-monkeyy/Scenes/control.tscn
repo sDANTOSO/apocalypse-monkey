@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cyegivlh4wwfs"]
 
 [ext_resource type="Texture2D" uid="uid://dm5yckbwxh283" path="res://Assets-misc/monkes.png" id="1_cgmvo"]
-[ext_resource type="Script" uid="uid://cpgb8r048nlok" path="res://Scenes/new_game_button.gd" id="2_cgmvo"]
+[ext_resource type="Script" uid="uid://cpgb8r048nlok" path="res://Scripts/new_game_button.gd" id="2_cgmvo"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_fu252"]
 
