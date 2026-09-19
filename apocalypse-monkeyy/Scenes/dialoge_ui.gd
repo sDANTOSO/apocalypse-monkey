@@ -1,7 +1,7 @@
 extends Control
 
-@onready var dialog_line = $UiTextbox1/Dialog_Line
-@onready var speaker_name = $PanelContainer/SpeakerName
+@onready var speaker_name: Label = %SpeakerName
+@onready var dialog_line: RichTextLabel = %Dialog_Line
 
 
 # Called when the node enters the scene tree for the first time.

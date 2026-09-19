@@ -40,6 +40,7 @@ grow_vertical = 0
 scale = Vector2(1.7118644, 1.7118644)
 
 [node name="Dialog_Line" type="RichTextLabel" parent="UiTextbox1" unique_id=1991137995]
+unique_name_in_owner = true
 layout_mode = 2
 bbcode_enabled = true
 text = "Hello, This Is Some [shake]Dialoge[/shake] Hehe"
@@ -59,6 +60,7 @@ polygon = PackedVector2Array(134.61331, -456.70825, 79.308685, -438.87463, 12.96
 uv = PackedVector2Array(26.5, 9.5, -40, -10.5, -40.5, 52, 61.5, 53)
 
 [node name="SpeakerName" type="Label" parent="PanelContainer" unique_id=1103941197]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 45.81
 offset_top = 7.0
