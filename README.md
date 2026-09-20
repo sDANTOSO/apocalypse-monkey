@@ -28,3 +28,7 @@ James:
 ## Assets
 Everything is made by us except the fonts. 
 
+## Gallery
+<img width="1152" height="642" alt="Screen Recording 2026-09-21 at 8 26 53 am" src="https://github.com/user-attachments/assets/25d1bc97-283e-43fa-ac04-98c76da76354" />
+
+
