@@ -22,7 +22,9 @@ position = Vector2(578, 601)
 shape = SubResource("RectangleShape2D_ilkqt")
 
 [node name="MainCharacter" parent="." unique_id=1825110969 instance=ExtResource("1_uee5o")]
-position = Vector2(612, -156)
+position = Vector2(674, -140)
+collision_layer = 257
+collision_mask = 257
 
 [node name="Monkes" type="Sprite2D" parent="." unique_id=431586813]
 position = Vector2(574, 590)
@@ -30,6 +32,8 @@ scale = Vector2(4.6015625, 1)
 texture = ExtResource("2_t7h48")
 
 [node name="Tree2" type="StaticBody2D" parent="." unique_id=676425552]
+position = Vector2(17, 0)
+collision_layer = 256
 
 [node name="Screenshot20260920030658" type="Sprite2D" parent="Tree2" unique_id=960498369]
 position = Vector2(1053, 284)
@@ -42,6 +46,8 @@ position = Vector2(1053, 284.25)
 shape = SubResource("RectangleShape2D_vs00g")
 
 [node name="Tree" type="StaticBody2D" parent="." unique_id=2112651990]
+position = Vector2(85, 2)
+collision_layer = 256
 
 [node name="Screenshot20260920030659" type="Sprite2D" parent="Tree" unique_id=1578441272]
 position = Vector2(695, 346)

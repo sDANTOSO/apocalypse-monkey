@@ -49,10 +49,11 @@ extends Node2D
 ## like winton jump pack omg we are cooking
 ## when they reach they right point in the game play entrance animation and run through whatever we want
 
+
 ## so chapter 1 will just be like forest to urban
 ##should make gameplay mockups
 ##should make map
-##osaka or japan
+##tokyo map
 ##
 
 
