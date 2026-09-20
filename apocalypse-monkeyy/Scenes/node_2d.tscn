@@ -29,9 +29,8 @@ texture = ExtResource("1_j2wod")
 
 [node name="Control" type="Control" parent="CanvasLayer2" unique_id=198418918]
 layout_mode = 3
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
+anchor_left = 0.2673611
+anchor_top = 0.8256173
 anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -20.0
@@ -47,10 +46,12 @@ position = Vector2(-519, -614)
 
 [node name="Dialoge UI" parent="CanvasLayer2" unique_id=231000439 instance=ExtResource("3_hh5uf")]
 unique_name_in_owner = true
-offset_left = -40.000004
-offset_top = 10.999999
-offset_right = -40.0
-offset_bottom = 11.0
+anchors_preset = -1
+anchor_right = 1.0463246
+offset_left = -39.0
+offset_top = 9.999999
+offset_right = -39.0
+offset_bottom = 10.0
 rotation = -0.0012976257
 metadata/_edit_use_anchors_ = true
 
