@@ -3,6 +3,8 @@ extends Control
 @onready var speaker_name: Label = %SpeakerName
 @onready var dialog_line: RichTextLabel = %Dialog_Line
 
+signal finished_typing
+
 var chars_per_second : float = 30.0
 var char_timer : float = 0.0
 var is_typing : bool = false
@@ -18,6 +20,7 @@ func _process(delta: float) -> void:
 	dialog_line.visible_characters = chars_to_show
 	if dialog_line.visible_characters >= dialog_line.get_total_character_count():
 		is_typing = false
+		finished_typing.emit()
 
 func set_line(speaker: String, text: String) -> void:
 	speaker_name.text = speaker

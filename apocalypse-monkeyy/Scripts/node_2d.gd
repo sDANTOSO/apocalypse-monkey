@@ -3,6 +3,7 @@ extends Node2D
 @onready var character_Test = %Character
 @onready var dialog_ui = %"Dialoge UI"
 var dialog_index : int = 0
+var current_speaker : String = ""
 
 const dialog_lines : Array[String] = [
 	"Sato: It's been 6 months since the start",
@@ -19,8 +20,8 @@ const dialog_lines : Array[String] = [
 	"Sato: In Japan only people "
 ]
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
+	dialog_ui.finished_typing.connect(_on_finished_typing)
 	dialog_index = 0
 	process_current_line()
 
@@ -40,5 +41,9 @@ func parse_line(line: String) -> Dictionary:
 
 func process_current_line():
 	var line_info = parse_line(dialog_lines[dialog_index])
+	current_speaker = line_info["speaker_name"]
 	dialog_ui.set_line(line_info["speaker_name"], line_info["dialog_line"])
-	character_Test.change_character(line_info["speaker_name"])
+	character_Test.change_character(current_speaker, true)
+
+func _on_finished_typing():
+	character_Test.change_character(current_speaker, false)
