@@ -1,60 +1,117 @@
 [gd_scene format=3 uid="uid://c0n04wbxtqitp"]
 
 [ext_resource type="PackedScene" uid="uid://btryiulrvkmra" path="res://Scenes/main_character.tscn" id="1_uee5o"]
-[ext_resource type="Texture2D" uid="uid://dm5yckbwxh283" path="res://Assets-misc/monkes.png" id="2_t7h48"]
-[ext_resource type="Texture2D" uid="uid://c3gd1678cgb86" path="res://Assets-misc/Screenshot 2026-09-20 030658.png" id="3_8hnfc"]
+[ext_resource type="Texture2D" uid="uid://ds7v3t78mimxo" path="res://Assets-misc/forest-ground.png" id="2_8hnfc"]
+[ext_resource type="Texture2D" uid="uid://bcem05hopd1n5" path="res://Assets-misc/tree1.png" id="3_5ip0q"]
+[ext_resource type="Texture2D" uid="uid://te4vu3f4chp" path="res://Assets-misc/tree2.png" id="4_wo0py"]
+[ext_resource type="Texture2D" uid="uid://57sch0ix3yn5" path="res://Assets-misc/tree4.png" id="5_vh310"]
+[ext_resource type="Texture2D" uid="uid://jd6xt87iwmy7" path="res://Assets-misc/tree5.png" id="6_igsr3"]
+[ext_resource type="Texture2D" uid="uid://dwbewwr4ow7fg" path="res://Assets-misc/tree6.png" id="7_xgdwn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ilkqt"]
-size = Vector2(1184, 173)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vs00g"]
-size = Vector2(84, 457.5)
+size = Vector2(1387, 72)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fu252"]
-size = Vector2(151, 338.5)
+size = Vector2(32.5, 228.25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hykn6"]
+size = Vector2(29.5, 345.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vs00g"]
+size = Vector2(30, 457.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u6rih"]
+size = Vector2(0.45254135, 61.89293)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_11fl1"]
+size = Vector2(33, 287.5)
 
 [node name="Forest" type="Node2D" unique_id=1470179228]
 
 [node name="Ground" type="StaticBody2D" parent="." unique_id=1396244305]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1186003827]
-position = Vector2(578, 601)
+position = Vector2(456.5, 611)
 shape = SubResource("RectangleShape2D_ilkqt")
 
+[node name="Monkes" type="Sprite2D" parent="Ground" unique_id=431586813]
+position = Vector2(576, 324)
+scale = Vector2(2, 2)
+texture = ExtResource("2_8hnfc")
+
+[node name="Monkes2" type="Sprite2D" parent="Ground" unique_id=836370739]
+position = Vector2(-547, 324)
+scale = Vector2(2, 2)
+texture = ExtResource("2_8hnfc")
+
 [node name="MainCharacter" parent="." unique_id=1825110969 instance=ExtResource("1_uee5o")]
-position = Vector2(674, -140)
+position = Vector2(-363, -41)
 collision_layer = 257
 collision_mask = 257
-
-[node name="Monkes" type="Sprite2D" parent="." unique_id=431586813]
-position = Vector2(574, 590)
-scale = Vector2(4.6015625, 1)
-texture = ExtResource("2_t7h48")
-
-[node name="Tree2" type="StaticBody2D" parent="." unique_id=676425552]
-position = Vector2(17, 0)
-collision_layer = 256
-
-[node name="Screenshot20260920030658" type="Sprite2D" parent="Tree2" unique_id=960498369]
-position = Vector2(1053, 284)
-rotation = 1.5707964
-scale = Vector2(0.69675744, -0.21823344)
-texture = ExtResource("3_8hnfc")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree2" unique_id=451722394]
-position = Vector2(1053, 284.25)
-shape = SubResource("RectangleShape2D_vs00g")
 
 [node name="Tree" type="StaticBody2D" parent="." unique_id=2112651990]
 position = Vector2(85, 2)
 collision_layer = 256
 
 [node name="Screenshot20260920030659" type="Sprite2D" parent="Tree" unique_id=1578441272]
-position = Vector2(695, 346)
-rotation = 3.1415925
-scale = Vector2(0.22474255, 0.8472116)
-texture = ExtResource("3_8hnfc")
+position = Vector2(275, 427)
+scale = Vector2(2, 2)
+texture = ExtResource("3_5ip0q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tree" unique_id=427172399]
-position = Vector2(696, 343)
+position = Vector2(-6.25, 466.125)
 shape = SubResource("RectangleShape2D_fu252")
+
+[node name="Tree2" type="StaticBody2D" parent="." unique_id=676425552]
+position = Vector2(17, 0)
+collision_layer = 256
+
+[node name="Screenshot20260920030658" type="Sprite2D" parent="Tree2" unique_id=960498369]
+position = Vector2(298, 322)
+scale = Vector2(2, 2)
+texture = ExtResource("4_wo0py")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree2" unique_id=2041408483]
+position = Vector2(301.25, 399.25)
+shape = SubResource("RectangleShape2D_hykn6")
+
+[node name="Tree3" type="StaticBody2D" parent="." unique_id=1561366360]
+position = Vector2(398, -6)
+collision_layer = 256
+
+[node name="Screenshot20260920030658" type="Sprite2D" parent="Tree3" unique_id=149124599]
+position = Vector2(750, 287)
+scale = Vector2(2, 2)
+texture = ExtResource("5_vh310")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree3" unique_id=1056698541]
+position = Vector2(738, 350)
+shape = SubResource("RectangleShape2D_vs00g")
+
+[node name="Tree4" type="StaticBody2D" parent="." unique_id=225570828]
+position = Vector2(203, -6)
+collision_layer = 256
+
+[node name="Screenshot20260920030658" type="Sprite2D" parent="Tree4" unique_id=24963123]
+position = Vector2(714, 355)
+scale = Vector2(2, 2)
+texture = ExtResource("6_igsr3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree4" unique_id=498110048]
+position = Vector2(737.1617, 386.45914)
+rotation = -3.1415925
+scale = Vector2(67.00672, 6.251413)
+shape = SubResource("RectangleShape2D_u6rih")
+
+[node name="Tree5" type="StaticBody2D" parent="." unique_id=1225478909]
+position = Vector2(573, -23)
+collision_layer = 256
+
+[node name="Screenshot20260920030658" type="Sprite2D" parent="Tree5" unique_id=572978851]
+position = Vector2(56, 377)
+scale = Vector2(2, 2)
+texture = ExtResource("7_xgdwn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree5" unique_id=1402256468]
+position = Vector2(53, 455)
+shape = SubResource("RectangleShape2D_11fl1")
