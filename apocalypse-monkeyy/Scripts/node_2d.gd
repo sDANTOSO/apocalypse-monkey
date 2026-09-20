@@ -10,14 +10,20 @@ const dialog_lines : Array[String] = [
 	"Sato: My garden. It hasn't even grown",
 	"Sato: There has been no fruit. No vegetables. No Income",
 	"Sato: No Harvest.",
-	"Sato: My tribe has started to starve",
+	"Sato: My family has started to starve",
 	"Sato: I must do something!",
 	"Sato: But what.",
 	"Sato: I know there is something not natural about this.",
 	"Sato: Ever since the ice age started, all the cities got empty",
 	"Sato: Everyone evacuated.",
 	"Sato: Or died.",
-	"Sato: In Japan only people "
+	"Sato: In Japan the only people who roam the streets are criminals",
+	"Sato: Japan has become a wasteland",
+	"Sato: Its time for me to go.",
+	"Sato: I must find other people who want change.",
+	"Sato: Who want to stop the apocolypse.",
+	"Sato: And take down whatever, and whoever is cauing it."
+
 ]
 
 func _ready():
