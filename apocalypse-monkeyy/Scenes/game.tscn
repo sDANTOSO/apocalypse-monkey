@@ -38,4 +38,4 @@ offset_bottom = 170.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=541019286]
 position = Vector2(577, 404)
-animation = &"idle"
+animation = &""

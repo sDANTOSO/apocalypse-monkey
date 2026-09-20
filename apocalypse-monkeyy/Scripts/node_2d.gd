@@ -5,6 +5,7 @@ extends Node2D
 var dialog_index : int = 0
 var current_speaker : String = ""
 
+
 const dialog_lines : Array[String] = [
 	"Sato: It's been 6 months since the start",
 	"Sato: My garden. It hasn't even grown",
@@ -30,6 +31,8 @@ func _input(event):
 		if dialog_index < len(dialog_lines) - 1:
 			dialog_index += 1
 			process_current_line()
+		if dialog_index==10:
+			get_tree().change_scene_to_file("res://Scenes/forest.tscn")
 
 func parse_line(line: String) -> Dictionary:
 	var line_info = line.split(":")
@@ -44,6 +47,7 @@ func process_current_line():
 	current_speaker = line_info["speaker_name"]
 	dialog_ui.set_line(line_info["speaker_name"], line_info["dialog_line"])
 	character_Test.change_character(current_speaker, true)
+	
 
 func _on_finished_typing():
 	character_Test.change_character(current_speaker, false)
