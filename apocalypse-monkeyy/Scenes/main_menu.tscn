@@ -19,6 +19,11 @@ offset_top = -23.0
 offset_right = 1163.0
 offset_bottom = 647.0
 
+[node name="ApocalypseMonkeyHead" type="Sprite2D" parent="." unique_id=1603355846]
+position = Vector2(575.00006, 277)
+scale = Vector2(3.3552635, 3.3552632)
+texture = ExtResource("3_opfnp")
+
 [node name="Button" type="Button" parent="." unique_id=27775815]
 offset_left = 32.0
 offset_top = 327.0
@@ -28,11 +33,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_n2kj2")
 icon = ExtResource("2_jix8l")
 flat = true
 expand_icon = true
-
-[node name="ApocalypseMonkeyHead" type="Sprite2D" parent="." unique_id=1603355846]
-position = Vector2(537, 277)
-scale = Vector2(3.3552635, 3.3552632)
-texture = ExtResource("3_opfnp")
 
 [node name="Label" type="Label" parent="." unique_id=1240712612]
 offset_left = 21.0

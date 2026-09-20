@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bdri13per2ogg"]
+
+[ext_resource type="Script" uid="uid://c7ix7qtwv1eqs" path="res://Scripts/start.gd" id="1_4pbvg"]
+[ext_resource type="Texture2D" uid="uid://v0dbpjjskso2" path="res://Assets-misc/gameplaymockup.png" id="2_cpfo3"]
+
+[node name="Start" type="Node2D" unique_id=1438006387]
+script = ExtResource("1_4pbvg")
+
+[node name="Gameplaymockup2" type="Sprite2D" parent="." unique_id=1979926478]
+position = Vector2(576, 324)
+scale = Vector2(4.5, 4.5)
+texture = ExtResource("2_cpfo3")

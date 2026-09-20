@@ -1,17 +1,54 @@
 [gd_scene format=3 uid="uid://c0n04wbxtqitp"]
 
 [ext_resource type="PackedScene" uid="uid://btryiulrvkmra" path="res://Scenes/main_character.tscn" id="1_uee5o"]
+[ext_resource type="Texture2D" uid="uid://dm5yckbwxh283" path="res://Assets-misc/monkes.png" id="2_t7h48"]
+[ext_resource type="Texture2D" uid="uid://c3gd1678cgb86" path="res://Assets-misc/Screenshot 2026-09-20 030658.png" id="3_8hnfc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ilkqt"]
 size = Vector2(1184, 173)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vs00g"]
+size = Vector2(84, 457.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fu252"]
+size = Vector2(151, 338.5)
+
 [node name="Forest" type="Node2D" unique_id=1470179228]
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1396244305]
+[node name="Ground" type="StaticBody2D" parent="." unique_id=1396244305]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1186003827]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1186003827]
 position = Vector2(578, 601)
 shape = SubResource("RectangleShape2D_ilkqt")
 
 [node name="MainCharacter" parent="." unique_id=1825110969 instance=ExtResource("1_uee5o")]
-position = Vector2(53, -115)
+position = Vector2(612, -156)
+
+[node name="Monkes" type="Sprite2D" parent="." unique_id=431586813]
+position = Vector2(574, 590)
+scale = Vector2(4.6015625, 1)
+texture = ExtResource("2_t7h48")
+
+[node name="Tree2" type="StaticBody2D" parent="." unique_id=676425552]
+
+[node name="Screenshot20260920030658" type="Sprite2D" parent="Tree2" unique_id=960498369]
+position = Vector2(1053, 284)
+rotation = 1.5707964
+scale = Vector2(0.69675744, -0.21823344)
+texture = ExtResource("3_8hnfc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree2" unique_id=451722394]
+position = Vector2(1053, 284.25)
+shape = SubResource("RectangleShape2D_vs00g")
+
+[node name="Tree" type="StaticBody2D" parent="." unique_id=2112651990]
+
+[node name="Screenshot20260920030659" type="Sprite2D" parent="Tree" unique_id=1578441272]
+position = Vector2(695, 346)
+rotation = 3.1415925
+scale = Vector2(0.22474255, 0.8472116)
+texture = ExtResource("3_8hnfc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tree" unique_id=427172399]
+position = Vector2(696, 343)
+shape = SubResource("RectangleShape2D_fu252")
