@@ -11,7 +11,12 @@ const dialog_lines : Array[String] = [
 	"Sato: No Harvest.",
 	"Sato: My tribe has started to starve",
 	"Sato: I must do something!",
-	"Minato: Yo"
+	"Sato: But what.",
+	"Sato: I know there is something not natural about this.",
+	"Sato: Ever since the ice age started, all the cities got empty",
+	"Sato: Everyone evacuated.",
+	"Sato: Or died.",
+	"Sato: In Japan only people "
 ]
 
 # Called when the node enters the scene tree for the first time.
