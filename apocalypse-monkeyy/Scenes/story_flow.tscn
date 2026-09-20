@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ck50igvha3ixy"]
+
+[ext_resource type="Script" uid="uid://c7waxl6vj1jfc" path="res://Scripts/story_node.gd" id="1_hoshj"]
+[ext_resource type="SpriteFrames" uid="uid://dnf022gp8hbeg" path="res://Sprite Frames/apocolypseMonkeyFrames.tres" id="2_gslo2"]
+[ext_resource type="SpriteFrames" uid="uid://dmkido154oya7" path="res://Sprite Frames/cowboy_moneky_frames.tres" id="3_nmppk"]
+
+[node name="Start" type="Node" unique_id=1758541169]
+script = ExtResource("1_hoshj")
+text = "wow the spa is warm"
+choices = Array[String](["stay in spa", "save the world"])
+animation = ExtResource("2_gslo2")
+metadata/_custom_type_script = "uid://c7waxl6vj1jfc"
+
+[node name="Spa" type="Node" parent="." unique_id=2094005159]
+script = ExtResource("1_hoshj")
+text = "mmmmm very warm water."
+animation = ExtResource("3_nmppk")
+metadata/_custom_type_script = "uid://c7waxl6vj1jfc"
+
+[node name="SaveTheWorld" type="Node" parent="." unique_id=1524086850]
+script = ExtResource("1_hoshj")
+text = "oh no the cowboy order is doing apocalypse"
+metadata/_custom_type_script = "uid://c7waxl6vj1jfc"

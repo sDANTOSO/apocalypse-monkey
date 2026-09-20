@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cf4eqhvwtqesq"]
+
+[node name="narration_dialog" type="PanelContainer" unique_id=515483504]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="margin_container" type="MarginContainer" parent="." unique_id=1316202678]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="VBoxContainer" type="VBoxContainer" parent="margin_container" unique_id=897745449]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="margin_container/VBoxContainer" unique_id=271980431]
+layout_mode = 2
+text = "asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd"

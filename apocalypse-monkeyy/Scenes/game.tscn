@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://73eteyn5ud6p"]
+
+[ext_resource type="PackedScene" uid="uid://db8dipaxm46qj" path="res://Scenes/dialog_choice.tscn" id="1_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://ck50igvha3ixy" path="res://Scenes/story_flow.tscn" id="2_3dryh"]
+[ext_resource type="Script" uid="uid://bigimcavfvl8f" path="res://Scripts/story_screen.gd" id="2_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://t7250daxi28x" path="res://Scenes/text_giver.tscn" id="4_3dryh"]
+
+[node name="game_scene" type="Control" unique_id=1090069732]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="story_screen" type="Control" parent="." unique_id=670343260 node_paths=PackedStringArray("bg")]
+layout_mode = 1
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_wrm1d")
+story_flow = ExtResource("2_3dryh")
+bg = NodePath("../AnimatedSprite2D")
+
+[node name="TextGiver" parent="story_screen" unique_id=1433328169 instance=ExtResource("4_3dryh")]
+layout_mode = 1
+offset_left = 170.0
+offset_top = 557.0
+offset_right = 945.0
+offset_bottom = 601.0
+
+[node name="dialog_choice" parent="story_screen" unique_id=1130119453 instance=ExtResource("1_qxrlw")]
+layout_mode = 1
+offset_left = 314.0
+offset_top = 129.0
+offset_right = 741.0
+offset_bottom = 170.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=541019286]
+position = Vector2(577, 404)
+animation = &"idle"

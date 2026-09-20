@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://pg43qhrxqaln"]
+
+[ext_resource type="Script" uid="uid://de060td0lpul1" path="res://Scripts/conversation_manager.gd" id="1_e21bn"]
+[ext_resource type="Texture2D" uid="uid://c24pnuebmac82" path="res://icon.svg" id="1_ler22"]
+[ext_resource type="PackedScene" uid="uid://t7250daxi28x" path="res://Scenes/text_giver.tscn" id="2_6h7vm"]
+
+[node name="Conversation" type="Control" unique_id=945024215 node_paths=PackedStringArray("character_rect", "player_rect", "text")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e21bn")
+character_rect = NodePath("Character")
+player_rect = NodePath("Player")
+text = NodePath("TextGiver")
+
+[node name="Character" type="TextureRect" parent="." unique_id=1241034041]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -287.0
+offset_bottom = 287.0
+grow_horizontal = 0
+texture = ExtResource("1_ler22")
+
+[node name="Player" type="TextureRect" parent="." unique_id=507819292]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -294.0
+offset_right = 294.0
+grow_vertical = 0
+texture = ExtResource("1_ler22")
+
+[node name="TextGiver" parent="." unique_id=1433328169 instance=ExtResource("2_6h7vm")]
+layout_mode = 1
+offset_left = 304.0
+offset_top = 417.0
+offset_right = -210.0
+offset_bottom = -73.5

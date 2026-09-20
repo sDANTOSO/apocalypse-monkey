@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://db8dipaxm46qj"]
+
+[ext_resource type="Script" uid="uid://c0wi2hjemv5nj" path="res://Scripts/choice_dialogue.gd" id="1_nl40f"]
+
+[node name="dialog_choice" type="PanelContainer" unique_id=1130119453]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nl40f")
+
+[node name="margins" type="MarginContainer" parent="." unique_id=1188903027]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="choices_container" type="VBoxContainer" parent="margins" unique_id=670785459]
+layout_mode = 2
+
+[node name="choice_button" type="Button" parent="margins/choices_container" unique_id=851965657]
+layout_mode = 2
+text = "fgdfgdfgsdfgsdfg"
