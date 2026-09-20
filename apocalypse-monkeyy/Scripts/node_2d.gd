@@ -40,6 +40,5 @@ func parse_line(line: String) -> Dictionary:
 
 func process_current_line():
 	var line_info = parse_line(dialog_lines[dialog_index])
-	dialog_ui.speaker_name.text = line_info["speaker_name"]
-	dialog_ui.dialog_line.text = line_info["dialog_line"]
+	dialog_ui.set_line(line_info["speaker_name"], line_info["dialog_line"])
 	character_Test.change_character(line_info["speaker_name"])

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cq7yvpbe7tkha"]
 
 [ext_resource type="Script" uid="uid://bh1tx5t7kcuiw" path="res://Scripts/node_2d.gd" id="1_6whob"]
-[ext_resource type="Texture2D" uid="uid://3ifvgqs8s1bg" path="res://Assets-misc/image (8).png" id="1_j2wod"]
+[ext_resource type="Texture2D" uid="uid://b8q2ergcle3jm" path="res://Assets-misc/home_bg.png" id="2_u7krg"]
 [ext_resource type="PackedScene" uid="uid://cwk7oilh5100h" path="res://Scenes/dialoge_ui.tscn" id="3_hh5uf"]
 [ext_resource type="PackedScene" uid="uid://bu6bsjsc50w4d" path="res://Scenes/character.tscn" id="3_u7krg"]
 [ext_resource type="PackedScene" uid="uid://dpbp0qgnahlpt" path="res://Scenes/audio_stream_player.tscn" id="5_u7krg"]
@@ -17,13 +17,12 @@ layer = -1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -78.0
-offset_top = -203.0
-offset_right = 218.0
-offset_bottom = 235.0
+offset_left = 2.0
+offset_top = -227.0
+offset_right = 16.666626
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_j2wod")
+texture = ExtResource("2_u7krg")
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1926739851]
 
@@ -42,7 +41,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Character" parent="CanvasLayer2/Control" unique_id=796381982 instance=ExtResource("3_u7krg")]
 unique_name_in_owner = true
-position = Vector2(-519, -614)
+position = Vector2(-261, -511)
 
 [node name="Dialoge UI" parent="CanvasLayer2" unique_id=231000439 instance=ExtResource("3_hh5uf")]
 unique_name_in_owner = true
