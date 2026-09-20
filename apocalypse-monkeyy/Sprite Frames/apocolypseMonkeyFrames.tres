@@ -1,14 +1,40 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://dnf022gp8hbeg"]
 
-[ext_resource type="Texture2D" uid="uid://dtsaevs1bb5as" path="res://Assets-misc/hitmonkeyv2.png" id="1_xgrr8"]
+[ext_resource type="Texture2D" uid="uid://dvn1mc21tg1vj" path="res://Assets-misc/Animations/Monkey Talking/hitmonkeyv2.png" id="1_36ogy"]
+[ext_resource type="Texture2D" uid="uid://qimi3hw7x0i8" path="res://Assets-misc/Animations/Monkey Talking/hitmonkeyv5.png" id="2_o424w"]
+[ext_resource type="Texture2D" uid="uid://cpiugg83bs5kk" path="res://Assets-misc/Animations/Monkey Talking/hitmonkeyv4.png" id="3_7u36c"]
+[ext_resource type="Texture2D" uid="uid://bd7hhyp8i60ha" path="res://Assets-misc/Animations/Monkey Talking/hitmonkeyv6.png" id="4_h6hjc"]
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_xgrr8")
+"texture": ExtResource("1_36ogy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_36ogy")
 }],
 "loop": 1,
 "name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_36ogy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_o424w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7u36c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_o424w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_h6hjc")
+}],
+"loop": 1,
+"name": &"talking",
 "speed": 5.0
 }]

@@ -1,17 +1,75 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://dmkido154oya7"]
 
-[ext_resource type="Texture2D" uid="uid://ctmhc1lbig2du" path="res://Assets-misc/cowboy-monke.png" id="1_grhdj"]
+[ext_resource type="Texture2D" uid="uid://ybrkcgy8gcfi" path="res://Assets-misc/Animations/Cowboy Idle/Monkey Idle1.png" id="1_6w1m6"]
+[ext_resource type="Texture2D" uid="uid://djrw8b5ml62ec" path="res://Assets-misc/Animations/Cowboy Idle/Monkey Idle2.png" id="2_u6472"]
+[ext_resource type="Texture2D" uid="uid://dgc8vw7xrte8d" path="res://Assets-misc/Animations/Cowboy Idle/Monkey Idle3.png" id="3_nqn6g"]
+[ext_resource type="Texture2D" uid="uid://dnatexajjcd0b" path="res://Assets-misc/Animations/Cowboy Idle/Monkey Idle4.png" id="4_yt303"]
+[ext_resource type="Texture2D" uid="uid://iuv8ovp3l5yo" path="res://Assets-misc/Animations/Cowboy Idle/Monkey Idle5.png" id="5_0loc8"]
+[ext_resource type="Texture2D" uid="uid://b6pmnqbq5cpw0" path="res://Assets-misc/Animations/Cowboy Idle/Monkey Idle7.png" id="6_0yoon"]
+[ext_resource type="Texture2D" uid="uid://cimu8am7v06rd" path="res://Assets-misc/Animations/Cowboy Idle/Monkey Idle6.png" id="7_perij"]
+[ext_resource type="Texture2D" uid="uid://dmqxkbw488t7t" path="res://Assets-misc/Animations/Cowboy Idle/Monkey Idle8.png" id="8_o7s8q"]
+[ext_resource type="Texture2D" uid="uid://qpm08oeb7v5x" path="res://Assets-misc/Animations/Cowboy Idle/Monkey Idle10.png" id="9_f12j2"]
+[ext_resource type="Texture2D" uid="uid://dqmuxkuwog0mc" path="res://Assets-misc/Animations/Cowboy Idle/Monkey Idle9.png" id="10_gxcui"]
+[ext_resource type="Texture2D" uid="uid://cjg6bt6h2t3vk" path="res://Assets-misc/Animations/Cowboy Talking/cowboy-monke_talking1.png" id="11_0yoon"]
+[ext_resource type="Texture2D" uid="uid://dcsannqcxwgiu" path="res://Assets-misc/Animations/Cowboy Talking/cowboy-monke_talking2.png" id="12_perij"]
+[ext_resource type="Texture2D" uid="uid://wrjq6d0mghi1" path="res://Assets-misc/Animations/Cowboy Talking/cowboy-monke_talking3.png" id="13_o7s8q"]
+[ext_resource type="Texture2D" uid="uid://dl54dq6edkv60" path="res://Assets-misc/Animations/Cowboy Talking/cowboy-monke_talking4.png" id="14_f12j2"]
+[ext_resource type="Texture2D" uid="uid://b4ft6acc0gnne" path="res://Assets-misc/Animations/Cowboy Talking/cowboy-monke_talking5.png" id="15_gxcui"]
 
 [resource]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_grhdj")
+"texture": ExtResource("1_6w1m6")
 }, {
 "duration": 1.0,
-"texture": ExtResource("1_grhdj")
+"texture": ExtResource("2_u6472")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nqn6g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_yt303")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0loc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_0yoon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_perij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_o7s8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_f12j2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_gxcui")
 }],
 "loop": 1,
 "name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_0yoon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_perij")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_o7s8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_f12j2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_gxcui")
+}],
+"loop": 1,
+"name": &"talking",
 "speed": 5.0
 }]
