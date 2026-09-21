@@ -25,6 +25,11 @@ Our project currently offers a main menu scene and a short visual novel section 
 Week 1 James:
 I drew two monkey sprites at a high pixel count for planned characters. I also developed a dialogue with branching choices system as a foundation for future(not accsesable in shipped demo).
 
+Week 1 Santoso:
+I created the forest scene along with the assets which allows the monkey to double jump off trees and climb over them. I also created a cowboy monkey and a monkey in a tuxedo
+
+Week 1 Remy:
+I created a start menu, font, music, and a dialogue system that allows the monkey to talk like a visual novel
 ## Roadmap
 We plan to add some things in the future. Theese things include:
   - Turning the game more into an action game less than a visual novel by doing things like
