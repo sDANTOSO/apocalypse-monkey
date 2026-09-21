@@ -1,4 +1,4 @@
-# apocalypse monkey
+# Apocalypse Monkey
 Apocolypse Monkey is an action visual novel, made in Godot.
 
 ## Features
