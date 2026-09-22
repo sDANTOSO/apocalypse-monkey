@@ -14,6 +14,13 @@
 	{"speaker": "Sato", "text": "Japan has become a wasteland"},
 	{"speaker": "Sato", "text": "I must find other people who want change."},
 	{"speaker": "Sato", "text": "Who want to stop the apocolypse."},
-	{"speaker": "Sato", "text": "And take down whatever, and whoever is cauing it."}
+	{"speaker": "Sato", "text": "And take down whatever, and whoever is cauing it."},
+	{"goto": "post_choice"},
+
+	{"speaker": "Sato", "text": "If your seeing this, my code didn't work"},
+
+	{"anchor": "post_choice"},
+	
+	{"speaker": "Sato", "text": "If your seeing this, my code did work!"},
 	
 ]

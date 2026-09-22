@@ -19,14 +19,45 @@ func _input(event):
 		if dialog_index < len(dialog_lines) - 1:
 			dialog_index += 1
 			process_current_line()
-		if dialog_index == 10:
+		else:
+			# reached the true end of the story
 			get_tree().change_scene_to_file("res://Scenes/forest.tscn")
 
 func process_current_line():
 	var line = dialog_lines[dialog_index]
-	current_speaker = line["speaker_name"]
-	dialog_ui.set_line(line["speaker_name"], line["dialog_line"])
+	#check if this is a goto command first
+	if line.has("goto"):
+		var target = get_anchor_position(line["goto"])
+		if target != null:
+			dialog_index = target
+			process_current_line()
+		return
+	
+	#check if this is just an anchor declaration
+	if line.has("anchor"):
+		dialog_index += 1
+		process_current_line()
+		return 
+	#reading tha line of dialog
+	
+	
+	current_speaker = line["speaker"]
+	dialog_ui.set_line(line["speaker"], line["text"])
 	character_Test.change_character(current_speaker, true)
+	
+	
+
+func get_anchor_position(anchor:String):
+	# find entry with matching name
+	for i in range(dialog_lines.size()):
+		if dialog_lines[i].has("anchor") and dialog_lines[i]["anchor"] == anchor:
+			return i
+			
+	#if we get here the anchor wasnt found
+	printerr("ERROR: I couldnt find it" + anchor + "")
+	return null
+	
+
 
 func _on_finished_typing():
 	character_Test.change_character(current_speaker, false)
@@ -56,4 +87,3 @@ func load_dialog(file_path):
 
 	# return the dialog
 	return json_content
-	
