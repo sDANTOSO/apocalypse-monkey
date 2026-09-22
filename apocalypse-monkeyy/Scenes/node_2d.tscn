@@ -41,7 +41,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Character" parent="CanvasLayer2/Control" unique_id=796381982 instance=ExtResource("3_u7krg")]
 unique_name_in_owner = true
-position = Vector2(-261, -511)
+position = Vector2(-280, -463)
 
 [node name="Dialoge UI" parent="CanvasLayer2" unique_id=231000439 instance=ExtResource("3_hh5uf")]
 unique_name_in_owner = true
