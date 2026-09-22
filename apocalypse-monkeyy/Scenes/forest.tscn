@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c0n04wbxtqitp"]
 
 [ext_resource type="PackedScene" uid="uid://btryiulrvkmra" path="res://Scenes/main_character.tscn" id="1_uee5o"]
+[ext_resource type="Texture2D" uid="uid://qgas7fr54rl1" path="res://Assets-misc/Sprite-0003.png" id="1_vh310"]
 [ext_resource type="Texture2D" uid="uid://ds7v3t78mimxo" path="res://Assets-misc/forest-ground.png" id="2_8hnfc"]
 [ext_resource type="Texture2D" uid="uid://bcem05hopd1n5" path="res://Assets-misc/tree1.png" id="3_5ip0q"]
 [ext_resource type="Texture2D" uid="uid://te4vu3f4chp" path="res://Assets-misc/tree2.png" id="4_wo0py"]
@@ -27,6 +28,11 @@ size = Vector2(0.45254135, 61.89293)
 size = Vector2(33, 287.5)
 
 [node name="Forest" type="Node2D" unique_id=1470179228]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1301671712]
+offset_right = 1162.6666
+offset_bottom = 654.0
+texture = ExtResource("1_vh310")
 
 [node name="Ground" type="StaticBody2D" parent="." unique_id=1396244305]
 
@@ -76,16 +82,16 @@ position = Vector2(301.25, 399.25)
 shape = SubResource("RectangleShape2D_hykn6")
 
 [node name="Tree3" type="StaticBody2D" parent="." unique_id=1561366360]
-position = Vector2(398, -6)
+position = Vector2(398, -8)
 collision_layer = 256
 
 [node name="Screenshot20260920030658" type="Sprite2D" parent="Tree3" unique_id=149124599]
-position = Vector2(750, 287)
+position = Vector2(750, 294)
 scale = Vector2(2, 2)
 texture = ExtResource("5_vh310")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Tree3" unique_id=1056698541]
-position = Vector2(738, 350)
+position = Vector2(738, 351)
 shape = SubResource("RectangleShape2D_vs00g")
 
 [node name="Tree4" type="StaticBody2D" parent="." unique_id=225570828]
