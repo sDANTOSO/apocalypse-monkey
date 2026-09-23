@@ -78,6 +78,11 @@ bbcode_enabled = true
 text = "Hello, This Is Some [shake]Dialoge[/shake] Hehe"
 tab_size = 5
 
+[node name="Polygon2D" type="Polygon2D" parent="UiTextbox1" unique_id=1380185710]
+position = Vector2(538.26733, -82.35644)
+scale = Vector2(2.0930696, 2.0930696)
+polygon = PackedVector2Array(30, 60, 50, 65, 30, 70)
+
 [node name="PanelContainer" type="Control" parent="." unique_id=1053344901]
 layout_mode = 1
 anchors_preset = 0

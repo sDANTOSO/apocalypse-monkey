@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cwk7oilh5100h" path="res://Scenes/dialoge_ui.tscn" id="3_hh5uf"]
 [ext_resource type="PackedScene" uid="uid://bu6bsjsc50w4d" path="res://Scenes/character.tscn" id="3_u7krg"]
 [ext_resource type="PackedScene" uid="uid://dpbp0qgnahlpt" path="res://Scenes/audio_stream_player.tscn" id="5_u7krg"]
+[ext_resource type="AudioStream" uid="uid://c4t6yvbr1iqd5" path="res://Assets-misc/Untitled song (Sep 19%2C 2026 5%3A16 PM).mp3" id="6_tx0tn"]
 
 [node name="Scene_Test" type="Node2D" unique_id=1769345082]
 rotation = 0.012734087
@@ -55,3 +56,5 @@ rotation = -0.0012976257
 metadata/_edit_use_anchors_ = true
 
 [node name="BG Music" parent="." unique_id=1125075624 instance=ExtResource("5_u7krg")]
+stream = ExtResource("6_tx0tn")
+volume_db = -29.664

@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://c0ccvjqqpb6hx" path="res://Assets-misc/Apocalypse monkey head.png" id="3_opfnp"]
 [ext_resource type="FontFile" uid="uid://b68o0l0yujctr" path="res://Assets-misc/Japanese Ramen.ttf" id="4_jix8l"]
 [ext_resource type="PackedScene" uid="uid://dpbp0qgnahlpt" path="res://Scenes/audio_stream_player.tscn" id="5_n45e2"]
+[ext_resource type="AudioStream" uid="uid://c4t6yvbr1iqd5" path="res://Assets-misc/Untitled song (Sep 19%2C 2026 5%3A16 PM).mp3" id="7_cp0ys"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n2kj2"]
 bg_color = Color(0.4745098, 0.6509804, 0.49803922, 0)
@@ -75,6 +76,7 @@ theme_override_font_sizes/font_size = 30
 text = "New Save"
 
 [node name="BG Music" parent="." unique_id=1125075624 instance=ExtResource("5_n45e2")]
+stream = ExtResource("7_cp0ys")
 volume_db = 1.0
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
