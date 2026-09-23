@@ -2,6 +2,7 @@ extends Control
 
 @onready var speaker_name: Label = %SpeakerName
 @onready var dialog_line: RichTextLabel = %Dialog_Line
+@onready var choice_list
 
 signal finished_typing
 

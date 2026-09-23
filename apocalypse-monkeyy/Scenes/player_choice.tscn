@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cfi8pl81fu0fw"]
+
+[ext_resource type="FontFile" uid="uid://dxgob514unqbt" path="res://Assets-misc/Japan wave.ttf" id="1_krtt2"]
+
+[sub_resource type="Theme" id="Theme_thhau"]
+
+[node name="Button" type="Button" unique_id=865391315]
+custom_minimum_size = Vector2(700, 50)
+theme = SubResource("Theme_thhau")
+theme_override_fonts/font = ExtResource("1_krtt2")
+theme_override_font_sizes/font_size = 41
+text = "This is the first choice"

@@ -38,12 +38,14 @@ func process_current_line():
 		dialog_index += 1
 		process_current_line()
 		return 
-	#reading tha line of dialog
-	
-	
-	current_speaker = line["speaker"]
-	dialog_ui.set_line(line["speaker"], line["text"])
-	character_Test.change_character(current_speaker, true)
+		
+	if line.has("choice"):
+		pass
+	else: 
+		#reading tha line of dialog
+		current_speaker = line["speaker"]
+		dialog_ui.set_line(line["speaker"], line["text"])
+		character_Test.change_character(current_speaker, true)
 	
 	
 
@@ -86,4 +88,4 @@ func load_dialog(file_path):
 		return null
 
 	# return the dialog
-	return json_content
+	return json_content 
