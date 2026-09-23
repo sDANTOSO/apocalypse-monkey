@@ -1,8 +1,11 @@
 extends Control
 
+const ChoiceButtonScene = preload("res://Scenes/player_choice.tscn")
+signal choice_selected(anchor: String)
+
 @onready var speaker_name: Label = %SpeakerName
 @onready var dialog_line: RichTextLabel = %Dialog_Line
-@onready var choice_list
+@onready var choice_list = %ChoiceList
 
 signal finished_typing
 
@@ -11,7 +14,8 @@ var char_timer : float = 0.0
 var is_typing : bool = false
 
 func _ready() -> void:
-	dialog_line.visible_ratio = 1.0
+	choice_list.hide()
+	dialog_line.visible_characters = 0
 
 func _process(delta: float) -> void:
 	if not is_typing:
@@ -29,3 +33,17 @@ func set_line(speaker: String, text: String) -> void:
 	dialog_line.visible_characters = 0
 	char_timer = 0.0
 	is_typing = true
+
+func display_choices(choices: Array):
+	choice_list.show()
+	for child in choice_list.get_children():
+		child.queue_free()
+	for choice in choices:
+		var choice_button = ChoiceButtonScene.instantiate()
+		choice_button.text = choice["text"]
+		choice_button.pressed.connect(_on_choice_button_pressed.bind(choice["goto"]))
+		choice_list.add_child(choice_button)
+
+func _on_choice_button_pressed(anchor: String):
+	choice_list.hide()
+	choice_selected.emit(anchor)

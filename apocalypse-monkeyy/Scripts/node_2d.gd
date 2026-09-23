@@ -11,11 +11,15 @@ var  dialog_lines : Array = []
 func _ready():
 	dialog_lines = load_dialog("res://Recourses/story/story.json")
 	dialog_ui.finished_typing.connect(_on_finished_typing)
+	dialog_ui.choice_selected.connect(_on_choice_selected)
 	dialog_index = 0
 	process_current_line()
+	
 
 func _input(event):
-	if event.is_action_pressed("next_line"):
+	var line = dialog_lines[dialog_index]
+	var has_choices = line.has("choices")
+	if event.is_action_pressed("next_line") and not has_choices:
 		if dialog_index < len(dialog_lines) - 1:
 			dialog_index += 1
 			process_current_line()
@@ -39,8 +43,8 @@ func process_current_line():
 		process_current_line()
 		return 
 		
-	if line.has("choice"):
-		pass
+	if line.has("choices"):
+		dialog_ui.display_choices(line["choices"])
 	else: 
 		#reading tha line of dialog
 		current_speaker = line["speaker"]
@@ -88,4 +92,10 @@ func load_dialog(file_path):
 		return null
 
 	# return the dialog
-	return json_content 
+	return json_content  
+	
+func _on_choice_selected(anchor: String):
+	var target = get_anchor_position(anchor)
+	if target != null:
+		dialog_index = target
+		process_current_line()

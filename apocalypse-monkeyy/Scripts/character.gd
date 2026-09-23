@@ -14,7 +14,7 @@ func _ready() -> void:
 func change_character(character_name: String, is_talking: bool = true):
 	animated_sprite.sprite_frames = CHARACTER_FRAMES[character_name]
 	if is_talking:
-		# change to talking when we get animated sprites (:
+
 		animated_sprite.play("talking")
 	else:
 		animated_sprite.play("idle")

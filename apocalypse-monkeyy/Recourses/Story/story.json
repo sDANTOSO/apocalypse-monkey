@@ -17,19 +17,19 @@
 	{"speaker": "Sato", "text": "And take down whatever, and whoever is cauing it."},
 	{"choices":
 		[
-			{"text": "First choice", "goto": "First Choice"},
-			{"text": "Second choice", "goto": "Second Choice"}
+			{"text": "First choice", "goto": "first_choice"},
+			{"text": "Second choice", "goto": "second_choice"}
 		]
 	},
-	
-	{"anchor": "First choice"},
-	{"speaker": "Sato", "text": "You chose tha first one"},
+
+	{"anchor": "first_choice"},
+	{"speaker": "Sato", "text": "You chose the first one"},
 	{"goto": "end"},
-	
-	{"anchor": "Second choice"},
-	{"anchor": "First choice"},
-	{"speaker": "Sato", "text": "You chose tha first one"},
+
+	{"anchor": "second_choice"},
+	{"speaker": "Sato", "text": "You chose the second one"},
 	{"goto": "end"},
+
 	{"anchor": "end"},
 	{"speaker": "Sato", "text": "THIS IS THE END"}
 ]
