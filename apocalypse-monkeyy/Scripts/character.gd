@@ -7,14 +7,20 @@ const CHARACTER_FRAMES = {
 	"Minato": preload("res://Sprite Frames/cowboy_moneky_frames.tres")
 }
 
-# Called when the node enters the scene tree for the first time.
+var current_character_name: String = ""
+
 func _ready() -> void:
-	pass # Replace with function body.
+	pass
 
 func change_character(character_name: String, is_talking: bool = true):
-	animated_sprite.sprite_frames = CHARACTER_FRAMES[character_name]
-	if is_talking:
+	if character_name != current_character_name:
+		if not CHARACTER_FRAMES.has(character_name):
+			printerr("ERROR: No sprite frames for character: ", character_name)
+			return
+		animated_sprite.sprite_frames = CHARACTER_FRAMES[character_name]
+		current_character_name = character_name
 
+	if is_talking:
 		animated_sprite.play("talking")
 	else:
 		animated_sprite.play("idle")

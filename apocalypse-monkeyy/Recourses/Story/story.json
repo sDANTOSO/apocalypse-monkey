@@ -15,19 +15,20 @@
 	{"speaker": "Sato", "text": "I must find other people who want change."},
 	{"speaker": "Sato", "text": "Who want to stop the apocolypse."},
 	{"speaker": "Sato", "text": "And take down whatever, and whoever is cauing it."},
+	{"speaker": "Sato", "text": "Are you going to work alone, or in a team?"},
 	{"choices":
 		[
-			{"text": "First choice", "goto": "first_choice"},
-			{"text": "Second choice", "goto": "second_choice"}
+			{"text": "Find a team", "goto": "first_choice"},
+			{"text": "Work alone", "goto": "second_choice"}
 		]
 	},
 
 	{"anchor": "first_choice"},
-	{"speaker": "Sato", "text": "You chose the first one"},
+	{"speaker": "Sato", "text": "You chose to work in a team. Lets go search for allies"},
 	{"goto": "end"},
 
 	{"anchor": "second_choice"},
-	{"speaker": "Sato", "text": "You chose the second one"},
+	{"speaker": "Sato", "text": "You chose to work alone. Lets go find some stuff out."},
 	{"goto": "end"},
 
 	{"anchor": "end"},
