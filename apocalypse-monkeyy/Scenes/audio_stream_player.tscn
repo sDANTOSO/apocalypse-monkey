@@ -1,9 +1,5 @@
 [gd_scene format=3 uid="uid://dpbp0qgnahlpt"]
 
-[ext_resource type="AudioStream" uid="uid://c4t6yvbr1iqd5" path="res://Assets-misc/Untitled song (Sep 19%2C 2026 5%3A16 PM).mp3" id="1_g84o6"]
-
 [node name="BG Music" type="AudioStreamPlayer" unique_id=1125075624]
-stream = ExtResource("1_g84o6")
 volume_db = -59.754
 autoplay = true
-parameters/looping = true

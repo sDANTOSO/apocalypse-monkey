@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cwk7oilh5100h"]
 
 [ext_resource type="Script" uid="uid://4l7a8ktb7ftm" path="res://Scripts/dialoge_ui.gd" id="1_yrr88"]
+[ext_resource type="AudioStream" uid="uid://brtbdewn8m5mc" path="res://webversion/bleep001.mp3" id="2_r6a0w"]
 [ext_resource type="Script" uid="uid://c0yfmutw0s245" path="res://Scripts/text_blip_sound.gd" id="2_r75eh"]
 [ext_resource type="PackedScene" uid="uid://cfi8pl81fu0fw" path="res://Scenes/player_choice.tscn" id="3_r6a0w"]
 [ext_resource type="FontFile" uid="uid://dxgob514unqbt" path="res://Assets-misc/Japan wave.ttf" id="3_thhau"]
@@ -29,6 +30,9 @@ theme = SubResource("Theme_mqg1c")
 script = ExtResource("1_yrr88")
 
 [node name="TextBlipSound" type="AudioStreamPlayer" parent="." unique_id=1073056383]
+unique_name_in_owner = true
+stream = ExtResource("2_r6a0w")
+volume_db = 11.143
 script = ExtResource("2_r75eh")
 
 [node name="ChoicesContainer" type="CenterContainer" parent="." unique_id=2090404008]

@@ -30,7 +30,7 @@
 	{"anchor": "second_choice"},
 	{"speaker": "Sato", "text": "You chose to work alone. Lets go find some stuff out."},
 	{"goto": "end"},
-
+	
 	{"anchor": "end"},
-	{"speaker": "Sato", "text": "THIS IS THE END"}
+	{"speaker": "Sato", "text": "Lets go"}
 ]
