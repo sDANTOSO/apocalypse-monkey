@@ -92,9 +92,9 @@ offset_right = 248.06
 offset_bottom = 514.33984
 
 [node name="Polygon2D" type="Polygon2D" parent="PanelContainer" unique_id=1623666245]
-position = Vector2(86.16717, 53.21875)
-scale = Vector2(1.0299339, 0.11214764)
-polygon = PackedVector2Array(134.61331, -456.70825, 79.308685, -438.87463, 12.968933, -438.87463, -45.980774, -438.87463, -45.98078, -162.45313, -45.980774, 58.777832, 201.60791, 62.69629)
+position = Vector2(97.31003, 53.21875)
+scale = Vector2(1.2722713, 0.11214764)
+polygon = PackedVector2Array(134.61331, -456.70825, -45.98078, -456.70825, -45.98078, -162.45313, -45.980774, 58.777832, 201.60791, 62.69629)
 uv = PackedVector2Array(26.5, 9.5, -40, -10.5, -40.5, 52, 61.5, 53)
 
 [node name="SpeakerName" type="Label" parent="PanelContainer" unique_id=1103941197]
