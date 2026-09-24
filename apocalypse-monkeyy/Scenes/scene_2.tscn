@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://bui2qarv5w6oe"]
+
+[ext_resource type="Script" uid="uid://bh1tx5t7kcuiw" path="res://Scripts/node_2d.gd" id="1_0adj8"]
+[ext_resource type="Texture2D" uid="uid://b2lf6eiuhwktk" path="res://Assets-misc/warehouse.png" id="2_0adj8"]
+[ext_resource type="PackedScene" uid="uid://bu6bsjsc50w4d" path="res://Scenes/character.tscn" id="3_bma84"]
+[ext_resource type="PackedScene" uid="uid://cwk7oilh5100h" path="res://Scenes/dialoge_ui.tscn" id="4_urv4o"]
+[ext_resource type="PackedScene" uid="uid://dpbp0qgnahlpt" path="res://Scenes/audio_stream_player.tscn" id="5_7gmk1"]
+[ext_resource type="AudioStream" uid="uid://c4t6yvbr1iqd5" path="res://Assets-misc/Untitled song (Sep 19%2C 2026 5%3A16 PM).mp3" id="6_v7s7v"]
+
+[node name="Scene_Test" type="Node2D" unique_id=1769345082]
+rotation = 0.012734087
+script = ExtResource("1_0adj8")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=623300826]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=541014698]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -7.0
+offset_top = -228.0
+offset_right = 17.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_0adj8")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=1926739851]
+
+[node name="Control" type="Control" parent="CanvasLayer2" unique_id=198418918]
+layout_mode = 3
+anchor_left = 0.2673611
+anchor_top = 0.8256173
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Character" parent="CanvasLayer2/Control" unique_id=796381982 instance=ExtResource("3_bma84")]
+unique_name_in_owner = true
+position = Vector2(-280, -463)
+
+[node name="Dialoge UI" parent="CanvasLayer2" unique_id=231000439 instance=ExtResource("4_urv4o")]
+unique_name_in_owner = true
+anchors_preset = -1
+anchor_right = 1.0463246
+offset_left = -39.0
+offset_top = 9.999999
+offset_right = -39.0
+offset_bottom = 10.0
+rotation = -0.0012976257
+metadata/_edit_use_anchors_ = true
+
+[node name="BG Music" parent="." unique_id=1125075624 instance=ExtResource("5_7gmk1")]
+stream = ExtResource("6_v7s7v")
+volume_db = -29.664
