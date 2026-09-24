@@ -7,12 +7,27 @@
 
 [resource]
 animations = [{
+"frames": [],
+"loop": 1,
+"name": &"confident-idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"confident-talking",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_36ogy")
 }],
 "loop": 1,
 "name": &"idle",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"laughing",
 "speed": 5.0
 }, {
 "frames": [{

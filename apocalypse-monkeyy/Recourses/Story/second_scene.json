@@ -1,4 +1,5 @@
 [
+	{"location" : "warehouse", "music": "home_theme"},
 	{"speaker": "Narrarator", "text": "After traveling through the city, you eventually arrive at the place"},
 	{"speaker": "Narrarator", "text": "Its an abandoned warehouse."},
 	{"speaker": "Narrarator", "text": "You found it online. But nowadays you can't trust anyone on the internet"},

@@ -12,17 +12,20 @@ var current_character_name: String = ""
 func _ready() -> void:
 	pass
 
-func change_character(character_name: String, is_talking: bool = true):
+func change_character(character_name: String, is_talking: bool, expression: String = ""):
+	if not CHARACTER_FRAMES.has(character_name):
+		printerr("ERROR: No sprite frames for character: ", character_name)
+		return
+
+	var sprite_frames = CHARACTER_FRAMES[character_name]
+	var stance = "talking" if is_talking else "idle"
+	var animation_name = expression + "-" + stance if expression else stance
+
 	if character_name != current_character_name:
-		if not CHARACTER_FRAMES.has(character_name):
-			printerr("ERROR: No sprite frames for character: ", character_name)
-			return
-		animated_sprite.sprite_frames = CHARACTER_FRAMES[character_name]
+		animated_sprite.sprite_frames = sprite_frames
 		current_character_name = character_name
 
-	if is_talking:
-		animated_sprite.play("talking")
+	if animated_sprite.sprite_frames.has_animation(animation_name):
+		animated_sprite.play(animation_name)
 	else:
-		animated_sprite.play("idle")
-
- 
+		animated_sprite.play(stance)

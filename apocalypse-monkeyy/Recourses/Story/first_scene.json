@@ -1,4 +1,5 @@
 [
+	{"location" : "home", "music": "home_theme"},
 	{"speaker": "Narrarator", "text": "One day the apocolypse began"},
 	{"speaker": "Narrarator", "text": "The world went cold"},
 	{"speaker": "Narrarator", "text": "majority of people went homeless and freezing, struggling to find food"},
@@ -43,5 +44,6 @@
 	{"goto": "end"},
 	
 	{"anchor": "end"},
-	{"speaker": "Sato", "text": "Lets go"}
+	{"speaker": "Sato", "text": "Lets go"},
+	{"next_scene": "second_scene", "transition": "fade"}
 ]

@@ -7,7 +7,7 @@
 script = ExtResource("1_ushfy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1703588158]
-position = Vector2(576, 654)
+position = Vector2(609, 576.99994)
 scale = Vector2(5.4967103, 5.4967103)
 sprite_frames = ExtResource("2_ushfy")
-animation = &"idle"
+animation = &"talking"
