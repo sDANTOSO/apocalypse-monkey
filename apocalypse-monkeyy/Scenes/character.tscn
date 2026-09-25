@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bu6bsjsc50w4d"]
 
 [ext_resource type="Script" uid="uid://lxb3ciw7gsjb" path="res://Scripts/character.gd" id="1_ushfy"]
-[ext_resource type="SpriteFrames" uid="uid://dnf022gp8hbeg" path="res://Sprite Frames/apocolypseMonkeyFrames.tres" id="2_ushfy"]
+[ext_resource type="SpriteFrames" uid="uid://c1rb6jc6vs3rc" path="res://Sprite Frames/narrarator.tres" id="2_ushfy"]
 
 [node name="Character" type="Node2D" unique_id=796381982]
 script = ExtResource("1_ushfy")

@@ -33,7 +33,7 @@ func _input(event):
 
 func process_current_line():
 	var line = dialog_lines[dialog_index]
-	#check if we have location
+
 	if line.has("location"):
 		dialog_index += 1
 		process_current_line()
@@ -51,12 +51,16 @@ func process_current_line():
 		process_current_line()
 		return
 
+	if line.has("show_character"):
+		character_Test.change_character(line["show_character"], false, line.get("expression", ""))
+	elif line.has("speaker"):
+		character_Test.change_character(line["speaker"], true, line.get("expression", ""))
+
 	if line.has("choices"):
 		dialog_ui.display_choices(line["choices"])
-	else:
+	elif line.has("speaker"):
 		current_speaker = line["speaker"]
 		dialog_ui.set_line(line["speaker"], line["text"])
-		character_Test.change_character(current_speaker, true)
 
 
 func get_anchor_position(anchor:String):
