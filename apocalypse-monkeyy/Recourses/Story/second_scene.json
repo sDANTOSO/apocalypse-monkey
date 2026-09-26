@@ -5,7 +5,7 @@
 	{"speaker": "Narrarator", "text": "You found it online. But nowadays you can't trust anyone on the internet"},
 	{"speaker": "Narrarator", "text": "So you will have to be careful"},
 	{"speaker": "Narrarator", "text": "You walk up the stairs to the warehouse"},
-	{"speaker": "Sato", "text": "The message said to meet them at 5AM. "},
+	{"speaker": "Sato", "text": "The message said to meet them at 5AM. ", "expression": "confident"},
 	{"speaker": "Sato", "text": "And its 5:01AM..."},
 	{"speaker": "Sato", "text": "Hello!?"},
 	{"speaker": "Minato", "text": "Hello.."},

@@ -60,7 +60,11 @@ func process_current_line():
 		dialog_ui.display_choices(line["choices"])
 	elif line.has("speaker"):
 		current_speaker = line["speaker"]
-		dialog_ui.set_line(line["speaker"], line["text"])
+		dialog_ui.set_line(line["speaker"], line["text"]) 
+	else:
+		dialog_index += 1
+		process_current_line()
+		return
 
 
 func get_anchor_position(anchor:String):
