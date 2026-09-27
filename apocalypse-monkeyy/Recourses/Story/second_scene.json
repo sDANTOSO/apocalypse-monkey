@@ -20,5 +20,6 @@
 	{"speaker": "Minato", "text": "Cool."},
 	{"speaker": "Sato", "text": "But I have some other..skills."},
 	{"speaker": "Minato", "text": "What are they?"},
-	{"speaker": "Minato", "text": "What are they?"},
+	{"speaker": "Sato", "text": "Doesn't matter", "expression": "laugh"},
+	
 ]

@@ -1,5 +1,7 @@
 extends Node2D
 
+
+@onready var background = %Background
 @onready var character_Test = %Character
 @onready var dialog_ui = %"Dialoge UI"
 var dialog_index : int = 0
@@ -8,7 +10,7 @@ var current_speaker : String = ""
 var dialog_lines : Array = []
 
 func _ready():
-	dialog_lines = load_dialog("res://Recourses/story/second_scene.json")
+	dialog_lines = load_dialog("res://Recourses/story/first_scene.json")
 	if dialog_lines.is_empty():
 		printerr("ERROR: dialog_lines is empty, aborting _ready()")
 		return
@@ -35,6 +37,8 @@ func process_current_line():
 	var line = dialog_lines[dialog_index]
 
 	if line.has("location"):
+		var background_file = "res://Assets-misc/" + line["location"] + ".png"
+		background.texture = load(background_file)
 		dialog_index += 1
 		process_current_line()
 		return
@@ -51,6 +55,16 @@ func process_current_line():
 		process_current_line()
 		return
 
+	if line.has("next_scene"):
+		var next_scene_path = "res://Recourses/story/" + line["next_scene"] + ".json"
+		dialog_lines = load_dialog(next_scene_path)
+		if dialog_lines.is_empty():
+			printerr("ERROR: failed to load next scene: ", next_scene_path)
+			return
+		dialog_index = 0
+		process_current_line()
+		return
+
 	if line.has("show_character"):
 		character_Test.change_character(line["show_character"], false, line.get("expression", ""))
 	elif line.has("speaker"):
@@ -60,7 +74,7 @@ func process_current_line():
 		dialog_ui.display_choices(line["choices"])
 	elif line.has("speaker"):
 		current_speaker = line["speaker"]
-		dialog_ui.set_line(line["speaker"], line["text"]) 
+		dialog_ui.set_line(line["speaker"], line["text"])
 	else:
 		dialog_index += 1
 		process_current_line()
