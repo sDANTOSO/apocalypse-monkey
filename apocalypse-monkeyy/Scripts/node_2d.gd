@@ -56,13 +56,16 @@ func process_current_line():
 		return
 
 	if line.has("next_scene"):
-		var next_scene_path = "res://Recourses/story/" + line["next_scene"] + ".json"
-		dialog_lines = load_dialog(next_scene_path)
-		if dialog_lines.is_empty():
-			printerr("ERROR: failed to load next scene: ", next_scene_path)
-			return
-		dialog_index = 0
-		process_current_line()
+		if line["next_scene"] == "forest":
+			get_tree().change_scene_to_file("res://Scenes/forest.tscn")
+		else:
+			var next_scene_path = "res://Recourses/story/" + line["next_scene"] + ".json"
+			dialog_lines = load_dialog(next_scene_path)
+			if dialog_lines.is_empty():
+				printerr("ERROR: failed to load next scene: ", next_scene_path)
+				return
+			dialog_index = 0
+			process_current_line()
 		return
 
 	if line.has("show_character"):
