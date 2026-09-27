@@ -1,5 +1,37 @@
 [
-	{"location" : "warehouse", "music": "home_theme"},
+	{"location" : "train_station"},
+	{"speaker": "Narrarator", "text": "The train station is empty"},
+	{"speaker": "Narrarator", "text": "The train doens't run"},
+	{"speaker": "Narrarator", "text": "So your only option is to walk along the tracks"},
+	{"speaker": "Narrarator", "text": "Every once in a while, somebody walks along in the distance"},
+	{"speaker": "Narrarator", "text": "And you nod heads or say hi"},
+	{"speaker": "Narrarator", "text": "But human connection is limited here."},
+	{"speaker": "Narrarator", "text": "And most people are just rude."},
+	{"speaker": "Narrarator", "text": "You see somebody in the distance"},
+	{"speaker": "Narrarator", "text": "Do you say hi?"},
+		{"choices":
+		[
+			{"text": "Say hi", "goto": "kindness"},
+			{"text": "Keep walking. People can be dangerous", "goto": "mean"}
+		]
+	},
+	{"anchor": "kindness"},
+	{"speaker": "Sato", "text": "Hey"},
+	{"speaker": "Narrarator", "text": "They look up. And ignore you"},
+	{"speaker": "Sato", "text": "What was the pont of that anyway."},
+	{"speaker": "Narrarator", "text": "They heard that"},
+	{"speaker": "Narrarator", "text": "Akward"},
+	{"goto": "post_train_encounter"},
+	
+	{"anchor": "mean"},
+	{"speaker": "Narrarator", "text": "You keep walking"},
+	{"speaker": "Narrarator", "text": "Nobody bats an eye"},
+	{"goto": "post_train_encounter"},
+	
+	{"anchor": "post_train_encounter"},
+	{"speaker": "Narrarator", "text": "You keep walking down the track"},
+	{"speaker": "Narrarator", "text": "And eventually you arrive"},
+	{"location" : "warehouse"},
 	{"speaker": "Narrarator", "text": "After traveling through the city, you eventually arrive at the place"},
 	{"speaker": "Narrarator", "text": "Its an abandoned warehouse."},
 	{"speaker": "Narrarator", "text": "You found it online. But nowadays you can't trust anyone on the internet"},
@@ -20,6 +52,7 @@
 	{"speaker": "Minato", "text": "Cool."},
 	{"speaker": "Sato", "text": "But I have some other..skills."},
 	{"speaker": "Minato", "text": "What are they?"},
-	{"speaker": "Sato", "text": "Doesn't matter", "expression": "laugh"},
+	{"speaker": "Sato", "text": "Doesn't matter"},
+	{"speaker": "Sato", "text:": "You'll find out soon"}
 	
 ]
