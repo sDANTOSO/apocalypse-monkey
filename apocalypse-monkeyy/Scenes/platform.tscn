@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://uy8dcmpsyufs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5ajho"]
+size = Vector3(10.009033, 1.0913086, 10.090271)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4flbx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_5ajho"]
+material = SubResource("StandardMaterial3D_4flbx")
+size = Vector3(10.025345, 1.0473633, 10.071045)
+
+[node name="platform" type="StaticBody3D" unique_id=218181666]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1696542272]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4041748, -0.045654297, -1.8450623)
+shape = SubResource("BoxShape3D_5ajho")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=889248976]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4135666, -0.02368164, -1.857544)
+mesh = SubResource("BoxMesh_5ajho")

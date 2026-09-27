@@ -54,7 +54,17 @@ extends Node2D
 ##should make gameplay mockups
 ##should make map
 ##tokyo map
-##
+##yo
+## grind
+## plan
+## see where game is currently at
+##get 5 hours in godot
+## highkey do 3d bullshit
+
+
+
+
+
 
 
 

@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://u6k2iy7ahjoe"]
+
+[ext_resource type="Script" uid="uid://bdweofdrde2i4" path="res://Scripts/player.gd" id="1_4flbx"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fu252"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_4flbx"]
+albedo_color = Color(1, 0.2465164, 0.4954735, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ilkqt"]
+material = SubResource("ORMMaterial3D_4flbx")
+
+[node name="player" type="CharacterBody3D" unique_id=932370429]
+script = ExtResource("1_4flbx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=263883203]
+shape = SubResource("CapsuleShape3D_fu252")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=690655284]
+mesh = SubResource("CapsuleMesh_ilkqt")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1638983972]
+transform = Transform3D(1, 0, 0, 0, 0.8641012, 0.5033179, 0, -0.5033179, 0.8641012, -0.11571944, 2.7507164, 4.377304)
+fov = 130.3387

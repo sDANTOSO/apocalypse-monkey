@@ -1,5 +1,7 @@
 extends Node2D
 
+const WAREHOUSE = preload("uid://b2lf6eiuhwktk")
+
 
 @onready var background = %Background
 @onready var character_Test = %Character
@@ -38,7 +40,10 @@ func process_current_line():
 
 	if line.has("location"):
 		var background_file = "res://Assets-misc/" + line["location"] + ".png"
-		background.texture = load(background_file)
+		##background.texture = WAREHOUSE //load()
+		
+		
+		
 		dialog_index += 1
 		process_current_line()
 		return

@@ -20,7 +20,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("2_wrm1d")
 story_flow = ExtResource("2_3dryh")
-bg = NodePath("../AnimatedSprite2D")
+bg = NodePath("")
 
 [node name="TextGiver" parent="story_screen" unique_id=1433328169 instance=ExtResource("4_3dryh")]
 layout_mode = 1
@@ -35,7 +35,3 @@ offset_left = 314.0
 offset_top = 129.0
 offset_right = 741.0
 offset_bottom = 170.0
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=541019286]
-position = Vector2(577, 404)
-animation = &""

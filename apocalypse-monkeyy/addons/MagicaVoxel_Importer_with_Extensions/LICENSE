@@ -1,0 +1,46 @@
+MIT License
+
+Copyright (c) 2019 JohnCWakley
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-------------------------------------------------------------------------------
+Attribution Notice
+-------------------------------------------------------------------------------
+
+This notice is informational only. It does not modify, replace, or add any
+condition to the MIT License above.
+
+Project lineage retained by this distribution:
+
+- Scayze created the earlier MagicaVoxel-Importer foundation.
+- n3rdw1z4rd adapted that foundation as vox-importer for Godot 3.1.
+- JohnCWakley is identified by the inherited metadata and the copyright notice
+  above. This notice does not claim direct participation in later forks.
+- CloneDeath created MagicaVoxel Importer with Extensions for Godot 3.1 and
+  added complex scene graph, material, greedy mesh, and ground snapping support.
+- Violgamba created the Godot 4 extensions++ fork and added layer and keyframe
+  import features, MeshLibrary keyframes, and FramedMeshInstance.
+- bakacandy created the 2026 scene hierarchy, AnimationPlayer, reimport safety,
+  and greedy mesh performance modifications in version 1.3.
+
+Copyright (c) 2026 bakacandy (version 1.3 modifications)
+
+The version 1.3 modifications by bakacandy are distributed under the same MIT
+License stated above.

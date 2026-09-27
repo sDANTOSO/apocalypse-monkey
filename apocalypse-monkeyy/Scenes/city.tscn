@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://ct08s73egvyix"]
+
+[ext_resource type="PackedScene" uid="uid://uy8dcmpsyufs" path="res://Scenes/platform.tscn" id="1_u7naw"]
+[ext_resource type="PackedScene" uid="uid://u6k2iy7ahjoe" path="res://Scenes/player.tscn" id="2_kyn5i"]
+[ext_resource type="ArrayMesh" uid="uid://d0b38eha7gw0i" path="res://Assets-misc/tower1.vox" id="3_o60eo"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_kyn5i"]
+
+[sub_resource type="Sky" id="Sky_kyn5i"]
+sky_material = SubResource("ProceduralSkyMaterial_kyn5i")
+
+[sub_resource type="Environment" id="Environment_ilkqt"]
+background_mode = 2
+background_color = Color(0.23242, 0.07143272, 0.1404404, 1)
+sky = SubResource("Sky_kyn5i")
+sky_custom_fov = 87.2
+ambient_light_source = 3
+ambient_light_color = Color(7.508397e-06, 0.91302687, 0.9179904, 1)
+ambient_light_energy = 16.0
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_fu252"]
+
+[node name="city" type="Node3D" unique_id=554910042]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=821749509]
+environment = SubResource("Environment_ilkqt")
+camera_attributes = SubResource("CameraAttributesPractical_fu252")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2085340094]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -670.86566, 38.23503, -8897.919)
+layers = 3
+light_color = Color(0.19215687, 1, 1, 1)
+light_energy = 3.485
+light_indirect_energy = 3.609
+light_volumetric_fog_energy = 0.0
+light_angular_distance = 90.0
+light_specular = 0.0
+
+[node name="GridMap" type="GridMap" parent="." unique_id=1028279176]
+
+[node name="player" parent="." unique_id=932370429 instance=ExtResource("2_kyn5i")]
+transform = Transform3D(1, 0, 0, 0, 0.9999277, 0.012025547, 0, -0.012025547, 0.9999277, -0.6356869, 2.382421, -0.660882)
+collision_mask = 3
+
+[node name="platform" parent="." unique_id=218181666 instance=ExtResource("1_u7naw")]
+collision_layer = 2
+collision_mask = 2
+
+[node name="platform2" parent="." unique_id=1821314855 instance=ExtResource("1_u7naw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5447893, 3.4747896, -7.617375)
+collision_layer = 2
+collision_mask = 2
+
+[node name="platform3" parent="." unique_id=1291937784 instance=ExtResource("1_u7naw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.513073, 7.3940096, -15.840565)
+collision_layer = 2
+collision_mask = 2
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1062480444]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41, 2, 14)
+mesh = ExtResource("3_o60eo")
