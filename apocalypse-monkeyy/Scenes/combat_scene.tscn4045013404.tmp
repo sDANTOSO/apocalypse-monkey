@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://doac6r4hof07v"]
+
+[ext_resource type="Texture2D" uid="uid://c24pnuebmac82" path="res://icon.svg" id="1_kv618"]
+[ext_resource type="Script" uid="uid://dclcmqnw77a3j" path="res://Scripts/combat_player.gd" id="2_qumoa"]
+[ext_resource type="Texture2D" uid="uid://b7cm6dku50g23" path="res://Sprite Frames/monke.png" id="3_rdqa8"]
+[ext_resource type="Script" uid="uid://blc5pqumir4vd" path="res://Scenes/combat_projectile.gd" id="4_7uj85"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xd07"]
+size = Vector2(128, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jq8tk"]
+size = Vector2(46, 46)
+
+[node name="Combat_scene" type="Node2D" unique_id=180709005]
+
+[node name="Arena" type="StaticBody2D" parent="." unique_id=1472850135]
+collision_layer = 32
+collision_mask = 128
+
+[node name="ArenaSprite" type="Sprite2D" parent="Arena" unique_id=464992019]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(505, 316)
+scale = Vector2(3.6796875, 3.6796875)
+texture = ExtResource("1_kv618")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Arena" unique_id=343832033]
+build_mode = 1
+polygon = PackedVector2Array(267, 79, 741, 78, 740, 551, 268, 551)
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1559910563]
+position = Vector2(493, 335)
+scale = Vector2(0.28125, 0.28125)
+collision_layer = 224
+collision_mask = 32
+script = ExtResource("2_qumoa")
+
+[node name="Player" type="Sprite2D" parent="Player" unique_id=210700688]
+position = Vector2(17.777775, 15.555603)
+scale = Vector2(1.21605, 1.21605)
+texture = ExtResource("3_rdqa8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=57640519]
+shape = SubResource("RectangleShape2D_3xd07")
+
+[node name="Projectile" type="CharacterBody2D" parent="." unique_id=236692500]
+position = Vector2(172, 284)
+collision_layer = 32
+collision_mask = 64
+script = ExtResource("4_7uj85")
+
+[node name="Sprite2D" type="Sprite2D" parent="Projectile" unique_id=1651666986]
+scale = Vector2(0.359375, 0.359375)
+texture = ExtResource("1_kv618")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Projectile" unique_id=55273060]
+shape = SubResource("RectangleShape2D_jq8tk")
