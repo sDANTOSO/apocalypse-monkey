@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://doac6r4hof07v"]
+
+[ext_resource type="Texture2D" uid="uid://c24pnuebmac82" path="res://icon.svg" id="1_kv618"]
+[ext_resource type="Script" uid="uid://dclcmqnw77a3j" path="res://Scripts/combat_player.gd" id="2_qumoa"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3xd07"]
+size = Vector2(128, 128)
+
+[node name="Combat_scene" type="Node2D" unique_id=180709005]
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1559910563]
+position = Vector2(493, 335)
+scale = Vector2(0.28125, 0.28125)
+script = ExtResource("2_qumoa")
+
+[node name="Player" type="Sprite2D" parent="Player" unique_id=210700688]
+texture = ExtResource("1_kv618")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=57640519]
+shape = SubResource("RectangleShape2D_3xd07")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1472850135]
+
+[node name="Arena" type="Sprite2D" parent="StaticBody2D" unique_id=464992019]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(505, 316)
+scale = Vector2(3.6796875, 3.6796875)
+texture = ExtResource("1_kv618")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=343832033]
+build_mode = 1
+polygon = PackedVector2Array(267, 79, 741, 78, 740, 551, 268, 551)

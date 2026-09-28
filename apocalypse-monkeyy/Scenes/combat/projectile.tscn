@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://blowpijsicjbs"]
+
+[ext_resource type="Script" uid="uid://blc5pqumir4vd" path="res://Scripts/combat_projectile.gd" id="1_kkdu8"]
+[ext_resource type="Texture2D" uid="uid://c24pnuebmac82" path="res://icon.svg" id="2_hkf3h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jq8tk"]
+size = Vector2(46, 377)
+
+[node name="Projectile" type="Area2D" unique_id=658577423]
+collision_layer = 32
+collision_mask = 64
+script = ExtResource("1_kkdu8")
+speed = 100.0
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=2082289259]
+position = Vector2(0, 225.00005)
+shape = SubResource("RectangleShape2D_jq8tk")
+
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D2" unique_id=64118674]
+position = Vector2(0, -453.50006)
+scale = Vector2(0.359375, 2.9453125)
+texture = ExtResource("2_hkf3h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=597488996]
+position = Vector2(0, -228.5)
+shape = SubResource("RectangleShape2D_jq8tk")
+
+[node name="Sprite2D2" type="Sprite2D" parent="CollisionShape2D" unique_id=1073168179]
+position = Vector2(0, 442)
+scale = Vector2(0.359375, 2.7734377)
+texture = ExtResource("2_hkf3h")

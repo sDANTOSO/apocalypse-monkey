@@ -13,7 +13,7 @@ metadata/_custom_type_script = "uid://c7waxl6vj1jfc"
 
 [node name="Spa" type="Node" parent="." unique_id=2094005159]
 script = ExtResource("1_hoshj")
-text = "mmmmm very warm water."
+text = "mmmmm very [shake]warm[/shake] water."
 animation = ExtResource("3_nmppk")
 metadata/_custom_type_script = "uid://c7waxl6vj1jfc"
 
