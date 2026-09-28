@@ -37,13 +37,14 @@
 
 	{"anchor": "first_choice"},
 	{"speaker": "Sato", "text": "You chose to work in a team. Lets go search for allies"},
-	{"goto": "end"},
+	{"next_scene": "next_scene"},
 
 	{"anchor": "second_choice"},
 	{"speaker": "Sato", "text": "You chose to work alone. Lets go find some stuff out."},
-	{"goto": "end"},
+	{"next_scene":"next_scene"},
 	
 	{"anchor": "end"},
 	{"speaker": "Sato", "text": "Lets go"},
-	{"next_scene": "second_scene", "transition": "fade"}
+	{"next_scene": "next_scene", "transition": "fade"}
+
 ]

@@ -69,6 +69,7 @@ extends Node2D
 
 
 
+
 ##tower
 ## what if there was a tower scene where the final battle was and its either like they raise up a level of the tower each time
 ## or its like your going up the tower and you can see like the whole tower so you can predict whats happening through walls

@@ -1,23 +1,18 @@
 [remap]
 
-importer="MagicaVoxel.With.Extensions.To.Scene"
-importer_version=4
-type="PackedScene"
+importer="MagicaVoxel.With.Extensions.To.Mesh"
+type="Mesh"
 uid="uid://84stnm3c5ix1"
-path="res://.godot/imported/tower1.vox-c680edccfbebaf57c683914f3c44219e.scn"
+path="res://.godot/imported/tower1.vox-c680edccfbebaf57c683914f3c44219e.mesh"
 
 [deps]
 
 source_file="res://Assets-misc/Voxels/tower1.vox"
-dest_files=["res://.godot/imported/tower1.vox-c680edccfbebaf57c683914f3c44219e.scn"]
+dest_files=["res://.godot/imported/tower1.vox-c680edccfbebaf57c683914f3c44219e.mesh"]
 
 [params]
 
-Scale=0.1
+Scale=0.5
 GreedyMeshGenerator=true
 SnapToGround=false
-OriginsToGeometry=false
-ImportAnimation=true
-AnimationFPS=8.0
-AnimationLoop=true
-AnimationAutoplay=false
+FirstKeyframeOnly=true

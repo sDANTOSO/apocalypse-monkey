@@ -39,8 +39,8 @@ func process_current_line():
 	var line = dialog_lines[dialog_index]
 
 	if line.has("location"):
-		var background_file = "res://Assets-misc/" + line["location"] + ".png"
-		##background.texture = WAREHOUSE //load()
+		##var background_file = "res://Assets-misc/" + line["location"] + ".png"
+		##background.texture = load() WAREHOUSE
 		
 		
 		
@@ -61,17 +61,19 @@ func process_current_line():
 		return
 
 	if line.has("next_scene"):
-		if line["next_scene"] == "forest":
+		## line["next_scene"] == "forest":
 			get_tree().change_scene_to_file("res://Scenes/forest.tscn")
-		else:
-			var next_scene_path = "res://Recourses/story/" + line["next_scene"] + ".json"
-			dialog_lines = load_dialog(next_scene_path)
-			if dialog_lines.is_empty():
-				printerr("ERROR: failed to load next scene: ", next_scene_path)
-				return
-			dialog_index = 0
-			process_current_line()
-		return
+		##else:
+			##var next_scene_path = "res://Recourses/story/" + line["next_scene"] + ".json"
+			##dialog_lines = load_dialog(next_scene_path)
+			##if dialog_lines.is_empty():
+			##	printerr("ERROR: failed to load next scene: ", next_scene_path)
+			##	return
+			##dialog_index = 0
+			##process_current_line()
+		##return
+		## i changed all the paths to go to next_scene in the json to lead to the forest
+		
 
 	if line.has("show_character"):
 		character_Test.change_character(line["show_character"], false, line.get("expression", ""))

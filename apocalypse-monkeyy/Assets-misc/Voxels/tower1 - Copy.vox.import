@@ -1,0 +1,17 @@
+[remap]
+
+importer="MagicaVoxel.With.Extensions.To.MeshLibrary"
+type="MeshLibrary"
+uid="uid://cg2sfmwu0jq3u"
+path="res://.godot/imported/tower1 - Copy.vox-0372d1eef65d15bc1151f653751409ba.meshlib"
+
+[deps]
+
+source_file="res://Assets-misc/Voxels/tower1 - Copy.vox"
+dest_files=["res://.godot/imported/tower1 - Copy.vox-0372d1eef65d15bc1151f653751409ba.meshlib"]
+
+[params]
+
+Scale=0.5
+GreedyMeshGenerator=true
+SnapToGround=false
